@@ -1,38 +1,62 @@
-.App {
-  text-align: center;
+/* body {
+  background-image: url("/public/images/background.png");
+} */
+
+html { 
+  background: url("/public/images/background.png") no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: Gibson-Regular;
+  src: url("/public/fonts/Canada Type - Gibson-Regular.otf");
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+@font-face {
+  font-family: Gibson-Bold;
+  src: url("/public/fonts/Canada Type - Gibson-Bold.otf");
+}
+
+.Main-category {
+  font-family: Gibson-Regular;
+  margin: 30px;
+}
+
+.Main-category p {
   color: white;
+  font-size: 22px;
+  line-height: 30px;
 }
 
-.App-link {
-  color: #61dafb;
+.Main-category h2 {
+  color: #032741;
+  font-size: 50px;
+  margin-bottom: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Main-category i {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.Main-category h2 i:nth-child(1) {
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+.Main-category h2 i:nth-child(2) {
+  font-size: 10px;
+}
+
+.Main-category h2 i:nth-child(3) {
+  font-size: 5px;
 }
