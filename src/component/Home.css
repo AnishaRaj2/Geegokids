@@ -1,0 +1,12 @@
+.Home {
+    display: flex;
+    flex-direction: row;
+}
+
+.Home .AtNurseries {
+    flex-grow: 1;
+}
+
+.Home .AtSchool {
+    flex-grow: 2;
+}
