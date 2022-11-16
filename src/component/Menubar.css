@@ -1,0 +1,43 @@
+.Menubar {
+    height: 108px;
+    color: white;
+    font-family: Gibson-Bold;
+    font-size: 1.5em;
+    font-weight: 700px;
+    background-color: #032741;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.Menubar img {
+    width: 195px;
+}
+
+.Menubar div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Menubar ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    padding: 20px;
+}
+
+.Menubar ul li {
+    padding: 13px 20px;
+}
+
+.Menubar ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.Menubar ul li i {
+    display: inline-block;
+    padding-right: 10px;
+}
