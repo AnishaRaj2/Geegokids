@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./SubCategory.css";
-import Task from "./Task";
+import TaskGroup from "./TaskGroup";
 import "../index.css";
 
 const SubCategory = (props) => {
@@ -21,7 +21,7 @@ const SubCategory = (props) => {
       </div>
       {state ? (
         <ul onClick={showDropDown}>
-          <Task />
+          <TaskGroup />
         </ul>
       ) : null}
     </>

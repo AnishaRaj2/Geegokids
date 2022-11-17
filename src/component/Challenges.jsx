@@ -49,6 +49,7 @@ const Challenges = () => {
               level={challenge.challenges.map((item) => {
                 return item.level === 0 ? "Beginner" : "Master";
               })}
+              // imgUrlTask={}
             />
           );
         })}
