@@ -1,30 +1,42 @@
-.Sub-category {
+.SubCategory {
     width: 100%;
+    max-width: 1000px;
     height: 100%;
+    margin: auto;
     font-family: Gibson-Regular;
     display: flex;
     flex-direction: row;
+    padding: 10px 0;
+    /* border-bottom: 1px solid rgb(128, 128, 128, 0.3); */
 }
 
-.Sub-category img {
-    flex-grow: 1;
-    width: 5%;
+.SubCategory div:first-child {
+    width: 20%;
 }
 
-.Sub-category div {
+.SubCategory img {
+    width: 100%;
+}
+
+.SubCategory div:nth-child(2) {
+    width: 80%;
     display: flex;
     flex-direction: column;
-    flex-grow: 8;
     margin-left: 20px;
     justify-content: center;
 }
 
-.Sub-category div p:first-child {
+.SubCategory div p:first-child {
     font-family: Gibson-Bold;
     margin-bottom: 20px;
 }
 
-.Sub-category ul {
+ul.TaskGroup {
+    width: 100%;
+    max-width: 1000px;
+    height: 100%;
     display: hide;
+    margin: auto;
+    list-style: none;
 }
 

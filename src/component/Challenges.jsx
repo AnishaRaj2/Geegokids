@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SubCategory from "./SubCategory";
+import SubChallengesCategory   from "./SubChallengesCategory";
 import "./Challenges.css";
 import "../index.css";
 
@@ -42,14 +42,14 @@ const Challenges = () => {
       <div className="sub-category">
         {challengeState.map((challenge) => {
           return (
-            <SubCategory
-              name={challenge.title}
+            <SubChallengesCategory
+              title={challenge.title}
               imgUrl={challenge.icon}
               key={challenge.id}
               level={challenge.challenges.map((item) => {
                 return item.level === 0 ? "Beginner" : "Master";
               })}
-              // imgUrlTask={}
+              challenges={challenge.challenges}
             />
           );
         })}

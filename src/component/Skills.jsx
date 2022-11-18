@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SubCategory from "./SubCategory";
+import SubSkillsCategory from "./SubSkillsCategory";
 import "./Skills.css";
 import "../index.css";
 
@@ -11,16 +11,13 @@ const Skills = () => {
   const [skillState, setSkillState] = useState([]);
 
   const fetchSkills = async () => {
-    const request = await fetch(
-      "https://kehitys.geegokids.com/toddlercategories/",
-      {
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: "Token 9d3b7b350c0b05725b37166f443360684cb36b1e",
-          "Accept-language": "en",
-        },
-      }
-    );
+    const request = await fetch("https://kehitys.geegokids.com/sportschools/", {
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: "Token 9d3b7b350c0b05725b37166f443360684cb36b1e",
+        "Accept-language": "en",
+      },
+    });
     const skillState = await request.json();
     console.log(skillState);
     setSkillState(skillState);
@@ -43,10 +40,11 @@ const Skills = () => {
       <div className="sub-category">
         {skillState.map((skill) => {
           return (
-            <SubCategory
-              name={skill.title}
-              imgUrl={skill.icon}
+            <SubSkillsCategory
+              title={skill.title}
+              imgUrl="/image/ikoni_seikkaile.png"
               key={skill.id}
+              sportschool_task_groups={skill.sportschool_task_groups}
             />
           );
         })}

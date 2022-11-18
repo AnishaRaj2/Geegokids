@@ -1,26 +1,29 @@
 import React, { useState, useEffect } from "react";
-import SubCategory from "./SubCategory";
+import SubToddlersCategory from "./SubToddlersCategory";
 import "./Toddlers.css";
 import "../index.css";
 
 const Toddlers = () => {
   useEffect(() => {
-    fetchChallenges();
+    fetchToddlers();
   }, []);
 
-  const [challengeState, setChallengeState] = useState([]);
+  const [toddlersState, setToddlersState] = useState([]);
 
-  const fetchChallenges = async () => {
-    const request = await fetch("https://kehitys.geegokids.com/challenges/", {
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: "Token 9d3b7b350c0b05725b37166f443360684cb36b1e",
-        "Accept-language": "en",
-      },
-    });
-    const challengeState = await request.json();
-    console.log(challengeState);
-    setChallengeState(challengeState);
+  const fetchToddlers = async () => {
+    const request = await fetch(
+      "https://kehitys.geegokids.com/toddlercategories/",
+      {
+        headers: {
+          "Content-Type": "application/json",
+          Authorization: "Token 9d3b7b350c0b05725b37166f443360684cb36b1e",
+          "Accept-language": "en",
+        },
+      }
+    );
+    const toddlersState = await request.json();
+    console.log(toddlersState);
+    setToddlersState(toddlersState);
   };
 
   return (
@@ -37,13 +40,12 @@ const Toddlers = () => {
         inner Geego and set an example!
       </p>
       <div className="sub-category">
-        {challengeState.map((challenge) => {
+        {toddlersState.map((toddler) => {
           return (
-            <SubCategory
-              name={challenge.title}
-              imgUrl={challenge.icon} //No icon in /challenges
-              key={challenge.id}
-              level={challenge.level !== 0 ? "Master" : "Beginner"}
+            <SubToddlersCategory
+              title={toddler.title}
+              imgUrl={toddler.icon}
+              key={toddler.id}
             />
           );
         })}
