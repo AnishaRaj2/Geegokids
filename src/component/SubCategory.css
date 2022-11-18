@@ -7,7 +7,8 @@
     display: flex;
     flex-direction: row;
     padding: 10px 0;
-    /* border-bottom: 1px solid rgb(128, 128, 128, 0.3); */
+    border-bottom: 1px solid rgb(128, 128, 128, 0.4);
+    
 }
 
 .SubCategory div:first-child {
