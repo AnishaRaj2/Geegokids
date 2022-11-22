@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./Login.css";
 
-const Login = ({ setToken }) => {
+const Login = (props) => {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
 
@@ -24,7 +24,7 @@ const Login = ({ setToken }) => {
       username,
       password,
     });
-    setToken(token);
+    props.setToken(token);
   };
 
   return (

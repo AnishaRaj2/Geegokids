@@ -16,7 +16,7 @@ const Challenges = (props) => {
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Token ${token}`,
+          Authorization: `Token ${token.key}`,
           "Accept-language": "en",
         },
       }
