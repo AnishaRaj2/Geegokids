@@ -4,19 +4,19 @@ import "./Challenges.css";
 import "../index.css";
 
 const Challenges = (props) => {
-  useEffect(() => {
-    fetchChallenges();
-  }, []);
-
   const [challengeState, setChallengeState] = useState([]);
 
-  const fetchChallenges = async () => {
+  useEffect(() => {
+    fetchChallenges(props.token);
+  }, [props.token]);
+
+  const fetchChallenges = async (token) => {
     const request = await fetch(
       "https://app.geegokids.com/challengecategories/",
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Token ${props.token}`,
+          Authorization: `Token ${token}`,
           "Accept-language": "en",
         },
       }
