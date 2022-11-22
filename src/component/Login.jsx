@@ -32,7 +32,7 @@ const Login = ({ setToken }) => {
       <h1>Log in</h1>
       <form onSubmit={handleSubmit}>
         <label>
-          <p>Usename</p>
+          <p>Username</p>
           <input
             type="text"
             name="username"
