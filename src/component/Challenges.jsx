@@ -3,7 +3,7 @@ import SubChallengesCategory from "./SubChallengesCategory";
 import "./Challenges.css";
 import "../index.css";
 
-const Challenges = () => {
+const Challenges = (props) => {
   useEffect(() => {
     fetchChallenges();
   }, []);
@@ -12,11 +12,11 @@ const Challenges = () => {
 
   const fetchChallenges = async () => {
     const request = await fetch(
-      "https://kehitys.geegokids.com/challengecategories/",
+      "https://app.geegokids.com/challengecategories/",
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Token 9d3b7b350c0b05725b37166f443360684cb36b1e",
+          Authorization: `Token ${props.token}`,
           "Accept-language": "en",
         },
       }
