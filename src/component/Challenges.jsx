@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SubChallengesCategory   from "./SubChallengesCategory";
+import SubChallengesCategory from "./SubChallengesCategory";
 import "./Challenges.css";
 import "../index.css";
 

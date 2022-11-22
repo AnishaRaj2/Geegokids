@@ -1,0 +1,41 @@
+.login-wrapper {
+    color: white;
+    font-family: Gibson-Regular;
+    width: 100%;
+    min-height: 100vh;
+    background-image: url("/public/image/gradienttitausta_kork2000px.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.login-wrapper form {
+    width: 40%;
+}
+
+.login-wrapper label {
+    display: block;
+    margin: auto;
+}
+
+.login-wrapper label:nth-child(2) p {
+    margin-top: 16px;
+}
+
+.login-wrapper h1 {
+    font-size: 100px;
+    text-align: center;
+}
+
+.login-wrapper button {
+    text-align: center;
+    margin: 40px 0;
+}
+
+.login-wrapper a {
+    display: block;
+    text-align: center;
+}

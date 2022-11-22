@@ -30,8 +30,10 @@ const Menubar = () => {
             </a>
           </li>
           <li>
-            <i className="fa-solid fa-user"></i>
-            Login
+            <Link to="/Login">
+              <i className="fa-solid fa-user"></i>
+              Login
+            </Link>
           </li>
         </ul>
       </div>
