@@ -12,7 +12,7 @@ const Challenges = (props) => {
 
   const fetchChallenges = async (token) => {
     const request = await fetch(
-      "https://app.geegokids.com/challengecategories/",
+      "https://kehitys.geegokids.com/challengecategories/",
       {
         headers: {
           "Content-Type": "application/json",

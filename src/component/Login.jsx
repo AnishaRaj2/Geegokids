@@ -9,7 +9,7 @@ const Login = (props) => {
   const [password, setPassword] = useState();
 
   const loginUser = async (credentials) => {
-    return fetch("https://app.geegokids.com/rest-auth/login/", {
+    return fetch("https://kehitys.geegokids.com/rest-auth/login/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
