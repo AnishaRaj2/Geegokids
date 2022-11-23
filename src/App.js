@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./component/Home";
@@ -12,13 +12,14 @@ import ChallengesTask from "./component/ChallengesTask";
 import SkillsTask from "./component/SkillsTask";
 import Login from "./component/Login";
 import Register from "./component/Register";
+import useToken from "./useToken";
 import "./App.css";
 
 const App = () => {
-  const [token, setToken] = useState();
+  const { token, setToken } = useToken();
 
   if (!token) {
-    return <Login setToken={setToken} />
+    return <Login setToken={setToken} />;
   }
 
   return (
@@ -29,9 +30,12 @@ const App = () => {
           <Route path="/" element={<Home />}></Route>
           <Route path="/AtNurseries" element={<AtNurseries />}></Route>
           <Route path="/AtSchool" element={<AtSchool />}></Route>
-          <Route path="/Challenges" element={<Challenges token={token} />}></Route>
-          <Route path="/Skills" element={<Skills />}></Route>
-          <Route path="/Toddlers" element={<Toddlers />}></Route>
+          <Route
+            path="/Challenges"
+            element={<Challenges token={token} />}
+          ></Route>
+          <Route path="/Skills" element={<Skills token={token} />}></Route>
+          <Route path="/Toddlers" element={<Toddlers token={token} />}></Route>
           <Route path="/ChallengesTask" element={<ChallengesTask />}></Route>
           <Route path="/SkillsTask" element={<SkillsTask />}></Route>
           <Route path="/Login" element={<Login />}></Route>

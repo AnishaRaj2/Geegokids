@@ -3,20 +3,20 @@ import SubToddlersCategory from "./SubToddlersCategory";
 import "./Toddlers.css";
 import "../index.css";
 
-const Toddlers = () => {
+const Toddlers = (props) => {
   useEffect(() => {
-    fetchToddlers();
-  }, []);
+    fetchToddlers(props.token);
+  }, [props.token]);
 
   const [toddlersState, setToddlersState] = useState([]);
 
-  const fetchToddlers = async () => {
+  const fetchToddlers = async (token) => {
     const request = await fetch(
       "https://kehitys.geegokids.com/toddlercategories/",
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: "Token 9d3b7b350c0b05725b37166f443360684cb36b1e",
+          Authorization: `Token ${token.key}`,
           "Accept-language": "en",
         },
       }

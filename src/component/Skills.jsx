@@ -3,18 +3,18 @@ import SubSkillsCategory from "./SubSkillsCategory";
 import "./Skills.css";
 import "../index.css";
 
-const Skills = () => {
+const Skills = (props) => {
   useEffect(() => {
-    fetchSkills();
-  }, []);
+    fetchSkills(props.token);
+  }, [props.token]);
 
   const [skillState, setSkillState] = useState([]);
 
-  const fetchSkills = async () => {
+  const fetchSkills = async (token) => {
     const request = await fetch("https://kehitys.geegokids.com/sportschools/", {
       headers: {
         "Content-Type": "application/json",
-        Authorization: "Token 9d3b7b350c0b05725b37166f443360684cb36b1e",
+        Authorization: `Token ${token.key}`,
         "Accept-language": "en",
       },
     });
