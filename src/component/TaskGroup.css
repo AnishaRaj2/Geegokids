@@ -2,8 +2,8 @@
     width: 100%;
     height: 100%;
     align-items: center;
-    margin-left: 100px;
-    padding: 10px 0;
+    padding-left: 30px;
+    padding-top: 10px;
 }
 
 .TaskGroup a {
@@ -14,23 +14,20 @@
 }
 
 .TaskGroup a > div:first-child {
-    width: 20%;
+    width: 40%;
 }
 
 .TaskGroup img {
-    width: 80%;
+    width: 100%;
 }
 
 .TaskGroup a > div:nth-child(2) {
-    width: 80%;
+    width: 60%;
     font-family: Gibson-Bold;
+    padding-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-}
-
-.TaskGroup p {
-    line-height: 50px;
 }
 
 .TaskGroup button {

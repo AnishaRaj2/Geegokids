@@ -39,3 +39,15 @@
     display: block;
     text-align: center;
 }
+
+.login-wrapper label:nth-child(2) {
+    position: relative;
+}
+
+.login-wrapper .fa-eye,
+.login-wrapper .fa-eye-slash {
+    color: gray;
+    position: absolute;
+    bottom: 15%;
+    right: 5%;
+}

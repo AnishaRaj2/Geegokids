@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./component/Home";
@@ -12,10 +12,14 @@ import ChallengesTask from "./component/ChallengesTask";
 import SkillsTask from "./component/SkillsTask";
 import Login from "./component/Login";
 import Register from "./component/Register";
+import useToken from "./useToken";
 import "./App.css";
 
 const App = () => {
-  const [token, setToken] = useState();
+  // const [token, setToken] = useState();
+
+  const { token, setToken } = useToken();
+  // console.log(token, setToken);
 
   if (!token) {
     return <Login setToken={setToken} />;

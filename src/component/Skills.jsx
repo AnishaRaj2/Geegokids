@@ -11,10 +11,10 @@ const Skills = (props) => {
   const [skillState, setSkillState] = useState([]);
 
   const fetchSkills = async (token) => {
-    const request = await fetch("https://kehitys.geegokids.com/sportschools/", {
+    const request = await fetch("https://app.geegokids.com/sportschools/", {
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Token ${token.key}`,
+        Authorization: `Token ${token}`,
         "Accept-language": "en",
       },
     });
@@ -37,15 +37,17 @@ const Skills = (props) => {
         mobility safely with your family. Start Geegoing and learn what makes
         you tick!
       </p>
-      <div className="sub-category">
+      <div className="sub-category no1">
         {skillState.map((skill) => {
           return (
-            <SubSkillsCategory
-              title={skill.title}
-              imgUrl="/image/ikoni_seikkaile.png"
-              key={skill.id}
-              sportschool_task_groups={skill.sportschool_task_groups}
-            />
+            <div className="no2">
+              <SubSkillsCategory
+                title={skill.title}
+                imgUrl="/image/ikoni_seikkaile.png"
+                key={skill.id}
+                sportschool_task_groups={skill.sportschool_task_groups}
+              />
+            </div>
           );
         })}
       </div>

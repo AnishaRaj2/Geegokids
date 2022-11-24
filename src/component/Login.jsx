@@ -7,9 +7,10 @@ import "./Login.css";
 const Login = (props) => {
   const [username, setUsername] = useState();
   const [password, setPassword] = useState();
+  const [showPassword, setShowPassword] = useState(false);
 
   const loginUser = async (credentials) => {
-    return fetch("https://kehitys.geegokids.com/rest-auth/login/", {
+    return fetch("https://app.geegokids.com/rest-auth/login/", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -27,6 +28,10 @@ const Login = (props) => {
     props.setToken(token);
   };
 
+  const handleShowPassword = () => {
+    setShowPassword(!showPassword);
+  };
+
   return (
     <div className="login-wrapper">
       <h1>Log in</h1>
@@ -42,12 +47,27 @@ const Login = (props) => {
         </label>
         <label>
           <p>Password</p>
-          <input
-            type="text"
-            name="password"
-            className="form-control"
-            onChange={(e) => setPassword(e.target.value)}
-          />
+          {showPassword ? (
+            <>
+              <input
+                type="text"
+                name="password"
+                className="form-control"
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <i class="fa-solid fa-eye" onClick={handleShowPassword}></i>
+            </>
+          ) : (
+            <>
+              <input
+                type="password"
+                name="password"
+                className="form-control"
+                onChange={(e) => setPassword(e.target.value)}
+              />
+              <i class="fa-solid fa-eye-slash" onClick={handleShowPassword}></i>
+            </>
+          )}
         </label>
         <div>
           <button type="submit" className="btn btn-primary form-control">

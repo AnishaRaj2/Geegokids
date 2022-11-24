@@ -12,11 +12,11 @@ const Challenges = (props) => {
 
   const fetchChallenges = async (token) => {
     const request = await fetch(
-      "https://kehitys.geegokids.com/challengecategories/",
+      "https://app.geegokids.com/challengecategories/",
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Token ${token.key}`,
+          Authorization: `Token ${token}`,
           "Accept-language": "en",
         },
       }
@@ -39,18 +39,20 @@ const Challenges = (props) => {
         levels inspire all family members to challenge themselves and each
         other. Geegoing is so much fun together!
       </p>
-      <div className="sub-category">
+      <div className="no1">
         {challengeState.map((challenge) => {
           return (
-            <SubChallengesCategory
-              title={challenge.title}
-              imgUrl={challenge.icon}
-              key={challenge.id}
-              level={challenge.challenges.map((item) => {
-                return item.level === 0 ? "Beginner" : "Master";
-              })}
-              challenges={challenge.challenges}
-            />
+            <div className="no2">
+              <SubChallengesCategory
+                title={challenge.title}
+                imgUrl={challenge.icon}
+                key={challenge.id}
+                level={challenge.challenges.map((item) => {
+                  return item.level === 0 ? "Beginner" : "Master";
+                })}
+                challenges={challenge.challenges}
+              />
+            </div>
           );
         })}
       </div>

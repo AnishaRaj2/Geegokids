@@ -24,9 +24,9 @@
   padding: 30px;
 }
 
-.main-category > p {
-  line-height: 30px;
-  padding: 0 30px 30px;
+.main-category > p{
+  line-height: 30px; 
+  padding: 0 30px;
 }
 
 .main-category i {
@@ -47,7 +47,8 @@
   font-size: 5px;
 }
 
-.sub-category {
+/* Remove */
+/* .sub-category {
   display: flex;
   flex-direction: column;
 }
@@ -56,4 +57,4 @@
   padding: 20px 30px;
   background-color: whitesmoke;
   border-bottom: 2px solid rgb(205, 195, 195);
-}
+} */

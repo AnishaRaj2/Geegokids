@@ -21,8 +21,6 @@ const ChallengesTaskGroup = (props) => {
             <button>Button</button>
             <button>Button</button>
             <button>Button</button>
-            <button>Button</button>
-            <button>Button</button>
           </div>
         </div>
       </Link>

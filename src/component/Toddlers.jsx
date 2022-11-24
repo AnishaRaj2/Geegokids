@@ -12,11 +12,11 @@ const Toddlers = (props) => {
 
   const fetchToddlers = async (token) => {
     const request = await fetch(
-      "https://kehitys.geegokids.com/toddlercategories/",
+      "https://app.geegokids.com/toddlercategories/",
       {
         headers: {
           "Content-Type": "application/json",
-          Authorization: `Token ${token.key}`,
+          Authorization: `Token ${token}`,
           "Accept-language": "en",
         },
       }
@@ -39,14 +39,16 @@ const Toddlers = (props) => {
         their skills and explore their limits under adult guidance. Find your
         inner Geego and set an example!
       </p>
-      <div className="sub-category">
+      <div className="sub-category no1">
         {toddlersState.map((toddler) => {
           return (
-            <SubToddlersCategory
-              title={toddler.title}
-              imgUrl={toddler.icon}
-              key={toddler.id}
-            />
+            <div className="no2">
+              <SubToddlersCategory
+                title={toddler.title}
+                imgUrl={toddler.icon}
+                key={toddler.id}
+              />
+            </div>
           );
         })}
       </div>

@@ -1,26 +1,27 @@
 .SubCategory {
     width: 100%;
-    max-width: 1000px;
-    height: 100%;
+    /* Remove height */
+    /* height: 100%;  */
     margin: auto;
     font-family: Gibson-Regular;
     display: flex;
     flex-direction: row;
-    padding: 10px 0;
-    border-bottom: 1px solid rgb(128, 128, 128, 0.4);
-    
+    border-bottom: 2px solid rgb(128, 0, 128, 0.3);
 }
 
 .SubCategory div:first-child {
-    width: 20%;
-}
+    width: 40%;
+ }
 
 .SubCategory img {
     width: 100%;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .SubCategory div:nth-child(2) {
-    width: 80%;
+    width: 60%;
     display: flex;
     flex-direction: column;
     margin-left: 20px;
@@ -29,12 +30,15 @@
 
 .SubCategory div p:first-child {
     font-family: Gibson-Bold;
-    margin-bottom: 20px;
+    /* margin-bottom: 20px; */
+}
+
+.SubCategory div p {
+    word-wrap: break-word;
 }
 
 ul.TaskGroup {
     width: 100%;
-    max-width: 1000px;
     height: 100%;
     display: hide;
     margin: auto;
