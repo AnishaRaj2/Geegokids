@@ -41,21 +41,22 @@ const Challenges = (props) => {
       </p>
       <div className="sub-categrory-group">
         {challengeState.map((challengeSubcategory) => {
-          return (
-            challengeSubcategory.challenges.length > 0 ?
+          return challengeSubcategory.challenges.length > 0 ? (
             <div className="sub-category">
               <SubChallengesCategory
                 title={challengeSubcategory.title}
                 imgUrl={challengeSubcategory.icon}
                 key={challengeSubcategory.id}
                 level={challengeSubcategory.challenges.reduce((total, item) => {
-                  return (
-                    (total + item.level) === 0 ? 'Beginer' : 'Beginer/ Master'
-                  )
-                },0)}
+                  return total + item.level === 0
+                    ? "Beginer"
+                    : "Beginer/ Master";
+                }, 0)}
                 challenges={challengeSubcategory.challenges}
-              /> 
-            </div> : ''
+              />
+            </div>
+          ) : (
+            ""
           );
         })}
       </div>

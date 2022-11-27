@@ -30,12 +30,10 @@ const SubChallengesCategory = (props) => {
                     taskGroupTitle={challenge.title}
                     key={challenge.id}
                     imgUrl={challenge.task_groups.map((taskGroup) => {
-                        return taskGroup.tasks.map((task) => {
-                            return task.thumbnail
-                        })
-                      })
-                    }
-
+                      return taskGroup.tasks.map((task) => {
+                        return task.thumbnail;
+                      });
+                    })}
                   />
                 </li>
               );
