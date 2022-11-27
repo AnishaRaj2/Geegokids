@@ -2,38 +2,3 @@
     color: orangered;
 }
 
-.Toddlers > div.no1 {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.Toddlers > div.no1 > div.no2 {
-    width: 100%;
-    padding: 20px 5px;
-}
-
-@media (min-width: 576px) {
-    .Toddlers > div.no1 > div.no2 {
-        width: 50%;
-        padding: 20px 5px;
-    }
-}
-
-@media (min-width: 768px) {
-    .Toddlers > div.no1 > div.no2 {
-        width: 33%;
-        padding: 20px 5px;
-    }
-}
-
-@media (min-width: 992px) {
-    .Toddlers > div.no1 > div.no2 {
-        width: 33%;
-        padding: 20px 5px;
-    }
-}
-

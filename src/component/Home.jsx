@@ -6,8 +6,8 @@ import "./Home.css";
 const Home = () => {
   return (
     <div className="Home">
-      <AtNurseries className="AtNurseries" />
       <AtSchool className="AtSchool" />
+      <AtNurseries className="AtNurseries" />
     </div>
   );
 };

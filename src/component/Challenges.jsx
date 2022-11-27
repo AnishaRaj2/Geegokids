@@ -12,7 +12,7 @@ const Challenges = (props) => {
 
   const fetchChallenges = async (token) => {
     const request = await fetch(
-      "https://app.geegokids.com/challengecategories/",
+      `${process.env.REACT_APP_API_ENDPOINT}/challengecategories`,
       {
         headers: {
           "Content-Type": "application/json",
@@ -39,20 +39,23 @@ const Challenges = (props) => {
         levels inspire all family members to challenge themselves and each
         other. Geegoing is so much fun together!
       </p>
-      <div className="no1">
-        {challengeState.map((challenge) => {
+      <div className="sub-categrory-group">
+        {challengeState.map((challengeSubcategory) => {
           return (
-            <div className="no2">
+            challengeSubcategory.challenges.length > 0 ?
+            <div className="sub-category">
               <SubChallengesCategory
-                title={challenge.title}
-                imgUrl={challenge.icon}
-                key={challenge.id}
-                level={challenge.challenges.map((item) => {
-                  return item.level === 0 ? "Beginner" : "Master";
-                })}
-                challenges={challenge.challenges}
-              />
-            </div>
+                title={challengeSubcategory.title}
+                imgUrl={challengeSubcategory.icon}
+                key={challengeSubcategory.id}
+                level={challengeSubcategory.challenges.reduce((total, item) => {
+                  return (
+                    (total + item.level) === 0 ? 'Beginer' : 'Beginer/ Master'
+                  )
+                },0)}
+                challenges={challengeSubcategory.challenges}
+              /> 
+            </div> : ''
           );
         })}
       </div>

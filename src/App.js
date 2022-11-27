@@ -11,7 +11,6 @@ import Toddlers from "./component/Toddlers";
 import ChallengesTask from "./component/ChallengesTask";
 import SkillsTask from "./component/SkillsTask";
 import Login from "./component/Login";
-import Register from "./component/Register";
 import useToken from "./useToken";
 import "./App.css";
 
@@ -28,7 +27,7 @@ const App = () => {
   return (
     <div className="App">
       <Router>
-        <Menubar />
+        <Menubar token={token} />
         <Routes>
           <Route path="/" element={<Home />}></Route>
           <Route path="/AtNurseries" element={<AtNurseries />}></Route>
@@ -41,8 +40,6 @@ const App = () => {
           <Route path="/Toddlers" element={<Toddlers token={token} />}></Route>
           <Route path="/ChallengesTask" element={<ChallengesTask />}></Route>
           <Route path="/SkillsTask" element={<SkillsTask />}></Route>
-          <Route path="/Login" element={<Login />}></Route>
-          <Route path="/Register" element={<Register />}></Route>
         </Routes>
       </Router>
     </div>

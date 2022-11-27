@@ -18,20 +18,24 @@ const SubChallengesCategory = (props) => {
         </div>
         <div>
           <p>{props.title}</p>
-          <p>
-            {props.level}
-            </p>
+          <p>{props.level}</p>
         </div>
       </div>
-      <ul className="TaskGroup" onClick={showDropDown}>
+      <ul className="task-groups" onClick={showDropDown}>
         {state
-          ? props.challenges.map((taskGroup) => {
+          ? props.challenges.map((challenge) => {
               return (
                 <li>
                   <ChallengesTaskGroup
-                    imgUrl="/image/ikoni_seikkaile.png"
-                    taskGroupTitle={taskGroup.title}
-                    key={taskGroup.id}
+                    taskGroupTitle={challenge.title}
+                    key={challenge.id}
+                    imgUrl={challenge.task_groups.map((taskGroup) => {
+                        return taskGroup.tasks.map((task) => {
+                            return task.thumbnail
+                        })
+                      })
+                    }
+
                   />
                 </li>
               );

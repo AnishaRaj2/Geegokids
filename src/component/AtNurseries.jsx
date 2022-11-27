@@ -7,15 +7,12 @@ import "../index.css";
 const AtNurseries = () => {
   return (
     <div className="AtNurseries">
-      <Link to="/Challenges">
+      <Link to="/Toddlers">
         <Button
-          imgUrl="/image/ikoni_haasteet@3x.png"
-          name="Challenges"
-          bgColor="Purple"
+          imgUrl="/image/ikoni_tenavat.png"
+          name="Toddlers"
+          bgColor="orangered"
         />
-      </Link>
-      <Link to="/Skills">
-        <Button imgUrl="/image/ikoni_koulut.png" name="Skills" bgColor="Blue" />
       </Link>
     </div>
   );

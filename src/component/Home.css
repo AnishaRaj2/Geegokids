@@ -1,12 +1,28 @@
 .Home {
     display: flex;
-    flex-direction: row;
-}
+    flex-direction: column;
+    align-items: center;    }
 
 .Home .AtNurseries {
-    flex-grow: 2;
+    flex-grow: 1;
 }
 
 .Home .AtSchool {
     flex-grow: 1;
+}
+
+@media (min-width: 768px) {
+    .Home {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .Home .AtNurseries {
+        flex-grow: 1;
+    }
+    
+    .Home .AtSchool {
+        flex-grow: 2;
+    }
 }

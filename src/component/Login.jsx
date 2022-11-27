@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import PropTypes from "prop-types";
-
 import "bootstrap/dist/css/bootstrap.min.css";
+
 import "./Login.css";
 
 const Login = (props) => {
@@ -10,7 +10,7 @@ const Login = (props) => {
   const [showPassword, setShowPassword] = useState(false);
 
   const loginUser = async (credentials) => {
-    return fetch("https://app.geegokids.com/rest-auth/login/", {
+    return fetch(`${process.env.REACT_APP_API_ENDPOINT}/rest-auth/login/`, {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

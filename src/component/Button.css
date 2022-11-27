@@ -15,3 +15,27 @@
     margin: auto;
     margin-bottom: 20px;
 }
+
+
+@media (min-width: 768px) {
+    .Button button img {
+        width: 200px;
+        height: 200px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .Button button img {
+        width: 250px;
+        height: 250px;
+        display: block;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    
+}
+
+

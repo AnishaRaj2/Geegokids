@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import "./TaskGroup.css";
 import "../index.css";
 
@@ -8,11 +9,11 @@ const ChallengesTaskGroup = (props) => {
     <div className="TaskGroup">
       <Link to="/ChallengesTask">
         <div>
-          <img src={props.imgUrl} alt="Nothing to fetch" />
-        </div>
+          <li>{props.imgUrl}</li>
+          </div>
         <div>
           <p>{props.taskGroupTitle}</p>
-          <div>
+          {/* <div>
             <button>Button</button>
             <button>Button</button>
             <button>Button</button>
@@ -21,7 +22,7 @@ const ChallengesTaskGroup = (props) => {
             <button>Button</button>
             <button>Button</button>
             <button>Button</button>
-          </div>
+          </div> */}
         </div>
       </Link>
     </div>

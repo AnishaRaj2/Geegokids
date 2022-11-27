@@ -1,9 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import Logout from "./Logout";
 import "./Menubar.css";
 import "../index.css";
 
-const Menubar = () => {
+const Menubar = (props) => {
   return (
     <div className="Menubar">
       <Link to="/">
@@ -30,10 +31,7 @@ const Menubar = () => {
             </a>
           </li>
           <li>
-            <Link to="/Login">
-              <i className="fa-solid fa-user"></i>
-              Login
-            </Link>
+            <Logout token={props.token} />
           </li>
         </ul>
       </div>
