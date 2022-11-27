@@ -10,7 +10,7 @@ const Logout = (props) => {
   return (
     <div className="logout" onClick={handleLogout}>
       <i className="fa-solid fa-user"></i>
-      Log out
+      Logout
     </div>
   );
 };

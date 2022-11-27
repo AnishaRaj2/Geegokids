@@ -29,11 +29,12 @@ const SubChallengesCategory = (props) => {
                   <ChallengesTaskGroup
                     taskGroupTitle={challenge.title}
                     key={challenge.id}
-                    imgUrl={challenge.task_groups.map((taskGroup) => {
-                      return taskGroup.tasks.map((task) => {
-                        return task.thumbnail;
-                      });
-                    })}
+                    imgUrl="/image/ikoni_seikkaile.png"
+                    // {challenge.task_groups.map((taskGroup) => {
+                    //   return taskGroup.tasks.map((task) => {
+                    //     return task.thumbnail;
+                    //   });
+                    // })}
                   />
                 </li>
               );
