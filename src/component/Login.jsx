@@ -55,7 +55,7 @@ const Login = (props) => {
                 className="form-control"
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <i class="fa-solid fa-eye" onClick={handleShowPassword}></i>
+              <i className="fa-solid fa-eye" onClick={handleShowPassword}></i>
             </>
           ) : (
             <>
@@ -65,7 +65,7 @@ const Login = (props) => {
                 className="form-control"
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <i class="fa-solid fa-eye-slash" onClick={handleShowPassword}></i>
+              <i className="fa-solid fa-eye-slash" onClick={handleShowPassword}></i>
             </>
           )}
         </label>
