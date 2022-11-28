@@ -8,7 +8,7 @@ const Logout = (props) => {
   };
 
   return (
-    <div className="logout" onClick={handleLogout}>
+    <div className="Logout" onClick={handleLogout}>
       <i className="fa-solid fa-user"></i>
       Logout
     </div>
