@@ -13,16 +13,6 @@ const ChallengesTaskGroup = (props) => {
           </div>
         <div>
           <p>{props.taskGroupTitle}</p>
-          {/* <div>
-            <button>Button</button>
-            <button>Button</button>
-            <button>Button</button>
-            <button>Button</button>
-            <button>Button</button>
-            <button>Button</button>
-            <button>Button</button>
-            <button>Button</button>
-          </div> */}
         </div>
       </Link>
     </div>

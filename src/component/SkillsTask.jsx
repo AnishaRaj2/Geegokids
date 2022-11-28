@@ -1,8 +1,9 @@
-import React from 'react'
+import React from 'react';
 
 const SkillsTask = () => {
   return (
-    <div>SkillsTask</div>
+    <div>
+    </div>
   )
 }
 

@@ -1,31 +1,9 @@
-import React, { useState, useEffect } from "react";
-import SubSkillsCategory from "./SubSkillsCategory";
+import React from "react";
+import SkillsSubCategory from "./SkillsSubCategory";
 import "./Skills.css";
 import "../index.css";
 
 const Skills = (props) => {
-  useEffect(() => {
-    fetchSkills(props.token);
-  }, [props.token]);
-
-  const [skillState, setSkillState] = useState([]);
-
-  const fetchSkills = async (token) => {
-    const request = await fetch(
-      `${process.env.REACT_APP_API_ENDPOINT}/sportschools`,
-      {
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Token ${token}`,
-          "Accept-language": "en",
-        },
-      }
-    );
-    const skillState = await request.json();
-    console.log(skillState);
-    setSkillState(skillState);
-  };
-
   return (
     <div className="Skills main-category">
       <h2>
@@ -41,17 +19,18 @@ const Skills = (props) => {
         you tick!
       </p>
       <div className="sub-categrory-group">
-        {skillState.map((skill) => {
-          return (
-            skill.sportschool_task_groups.length > 0 ?
+        {props.skillsState.map((skill) => {
+          return skill.sportschool_task_groups.length > 0 ? (
             <div className="sub-category">
-              <SubSkillsCategory
+              <SkillsSubCategory
                 title={skill.title}
-                imgUrl="/image/ikoni_seikkaile.png"
+                imgUrl={skill.icon}
                 key={skill.id}
                 sportschool_task_groups={skill.sportschool_task_groups}
               />
-            </div> : ''
+            </div>
+          ) : (
+            ""
           );
         })}
       </div>

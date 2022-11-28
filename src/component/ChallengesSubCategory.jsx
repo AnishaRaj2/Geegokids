@@ -3,7 +3,7 @@ import ChallengesTaskGroup from "./ChallengesTaskGroup";
 import "./SubCategory.css";
 import "../index.css";
 
-const SubChallengesCategory = (props) => {
+const ChallengesSubCategory = (props) => {
   const [state, setState] = useState(false);
 
   const showDropDown = () => {
@@ -18,7 +18,6 @@ const SubChallengesCategory = (props) => {
         </div>
         <div>
           <p>{props.title}</p>
-          <p>{props.level}</p>
         </div>
       </div>
       <ul className="task-groups" onClick={showDropDown}>
@@ -27,7 +26,7 @@ const SubChallengesCategory = (props) => {
               return (
                 <li>
                   <ChallengesTaskGroup
-                    taskGroupTitle={challenge.title}
+                    title={challenge.title}
                     key={challenge.id}
                     imgUrl="/image/ikoni_seikkaile.png"
                     // {challenge.task_groups.map((taskGroup) => {
@@ -45,4 +44,4 @@ const SubChallengesCategory = (props) => {
   );
 };
 
-export default SubChallengesCategory;
+export default ChallengesSubCategory;

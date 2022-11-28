@@ -1,31 +1,9 @@
-import React, { useState, useEffect } from "react";
-import SubChallengesCategory from "./SubChallengesCategory";
+import React from "react";
+import ChallengesSubCategory from "./ChallengesSubCategory";
 import "./Challenges.css";
 import "../index.css";
 
 const Challenges = (props) => {
-  const [challengeState, setChallengeState] = useState([]);
-
-  useEffect(() => {
-    fetchChallenges(props.token);
-  }, [props.token]);
-
-  const fetchChallenges = async (token) => {
-    const request = await fetch(
-      `${process.env.REACT_APP_API_ENDPOINT}/challengecategories`,
-      {
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Token ${token}`,
-          "Accept-language": "en",
-        },
-      }
-    );
-    const challengeState = await request.json();
-    console.log(challengeState);
-    setChallengeState(challengeState);
-  };
-
   return (
     <div className="Challenges main-category">
       <h2>
@@ -40,24 +18,18 @@ const Challenges = (props) => {
         other. Geegoing is so much fun together!
       </p>
       <div className="sub-categrory-group">
-        {challengeState.map((challengeSubcategory) => {
-          return challengeSubcategory.challenges.length > 0 ? (
+        {props.challengesState.map((challengesSubcategory) => {
+          return challengesSubcategory.challenges.length > 0 ? 
+          (
             <div className="sub-category">
-              <SubChallengesCategory
-                title={challengeSubcategory.title}
-                imgUrl={challengeSubcategory.icon}
-                key={challengeSubcategory.id}
-                level={challengeSubcategory.challenges.reduce((total, item) => {
-                  return total + item.level === 0
-                    ? "Beginer"
-                    : "Beginer/ Master";
-                }, 0)}
-                challenges={challengeSubcategory.challenges}
+              <ChallengesSubCategory
+                title={challengesSubcategory.title}
+                imgUrl={challengesSubcategory.icon}
+                key={challengesSubcategory.id}
+                challenges={challengesSubcategory.challenges}
               />
             </div>
-          ) : (
-            ""
-          );
+          ) : "";
         })}
       </div>
     </div>

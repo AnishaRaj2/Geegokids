@@ -3,7 +3,7 @@ import SkillsTaskGroup from "./SkillsTaskGroup.jsx";
 import "./SubCategory.css";
 import "../index.css";
 
-const SubSkillsCategory = (props) => {
+const SkillsSubCategory = (props) => {
   const [state, setState] = useState(false);
 
   const showDropDown = () => {
@@ -39,4 +39,4 @@ const SubSkillsCategory = (props) => {
   );
 };
 
-export default SubSkillsCategory;
+export default SkillsSubCategory;

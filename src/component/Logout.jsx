@@ -1,5 +1,5 @@
 import React from "react";
-import "./logout.css";
+import "./Logout.css";
 
 const Logout = (props) => {
   const handleLogout = () => {
