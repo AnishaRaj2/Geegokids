@@ -19,14 +19,13 @@ const Skills = (props) => {
         you tick!
       </p>
       <div className="sub-categrory-group">
-        {props.skillsState.map((skill) => {
-          return skill.sportschool_task_groups.length > 0 ? (
+        {props.skillsState.map((skillsSubCategory) => {
+          return skillsSubCategory.sportschool_task_groups.length > 0 ? (
             <div className="sub-category">
               <SkillsSubCategory
-                title={skill.title}
-                imgUrl={skill.icon}
-                key={skill.id}
-                sportschool_task_groups={skill.sportschool_task_groups}
+                title={skillsSubCategory.title}
+                key={skillsSubCategory.id}
+                imgUrl={skillsSubCategory.sportschool_task_groups[0].sportschoo_tasks[0].thumbnail}
               />
             </div>
           ) : (

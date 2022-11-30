@@ -5,13 +5,13 @@ import "../index.css";
 
 const SkillsTaskGroup = (props) => {
   return (
-    <div className="TaskGroup">
+    <div className="TaskGroup SkillsTaskGroup">
       <Link to="/SkillsTask">
         <div>
-          <img src={props.imgUrl} alt="Nothing to fetch" />
+          <img src={props.imgUrl} alt={props.title} />
         </div>
         <div>
-          <p>{props.taskGroupTitle}</p>
+          <p>{props.title}</p>
         </div>
       </Link>
     </div>

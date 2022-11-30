@@ -6,12 +6,10 @@ import "../index.css";
 
 const ChallengesTaskGroup = (props) => {
   return (
-    <div className="TaskGroup">
+    <div className="TaskGroup ChallengesTaskGroup">
       <Link to="/ChallengesTask">
         <div>
           <img src={props.imgUrl} alt={props.title} />
-          {/* {props.imgUrl}
-          {props.title} */}
         </div>
         <div>
           <p>{props.title}</p>

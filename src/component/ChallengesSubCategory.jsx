@@ -29,11 +29,6 @@ const ChallengesSubCategory = (props) => {
                     title={challenge.title}
                     key={challenge.id}
                     imgUrl={challenge.task_groups[0].tasks[0].thumbnail}
-                    // imgUrl={challenge.task_groups.map((tasks, index) => {
-                    //   return index === 0 ? tasks.tasks.map((task, index) =>{
-                    //     return index === 0 ? task.thumbnail : ""
-                    //   }) : ""
-                    // })}
                   />
                 </li>
               );
