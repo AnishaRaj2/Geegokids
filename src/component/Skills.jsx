@@ -25,7 +25,10 @@ const Skills = (props) => {
               <SkillsSubCategory
                 title={skillsSubCategory.title}
                 key={skillsSubCategory.id}
-                imgUrl={skillsSubCategory.sportschool_task_groups[0].sportschoo_tasks[0].thumbnail}
+                imgUrl={
+                  skillsSubCategory.sportschool_task_groups[0]
+                    .sportschool_tasks[0].thumbnail
+                }
               />
             </div>
           ) : (
