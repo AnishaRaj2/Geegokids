@@ -73,7 +73,7 @@ const App = () => {
             path="/Toddlers"
             element={<Toddlers toddlersState={toddlersState} />}
           ></Route>
-          <Route path="/ChallengesTask" element={<ChallengesTask />}></Route>
+          <Route path="/ChallengesTask" element={<ChallengesTask challengesState={challengesState} />}></Route>
           <Route path="/SkillsTask" element={<SkillsTask />}></Route>
           <Route path="/ToddlersTasks" element={<ToddlersTasks />}></Route>
         </Routes>

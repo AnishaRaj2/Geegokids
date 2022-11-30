@@ -9,10 +9,12 @@ const ChallengesTaskGroup = (props) => {
     <div className="TaskGroup">
       <Link to="/ChallengesTask">
         <div>
-          <li>{props.imgUrl}</li>
-          </div>
+          <img src={props.imgUrl} alt={props.title} />
+          {/* {props.imgUrl}
+          {props.title} */}
+        </div>
         <div>
-          <p>{props.taskGroupTitle}</p>
+          <p>{props.title}</p>
         </div>
       </Link>
     </div>
