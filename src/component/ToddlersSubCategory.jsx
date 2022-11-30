@@ -5,7 +5,7 @@ import "../index.css";
 const ToddlersSubCategory = (props) => {
   
   return (
-    <div className="SubCategory" style={{ borderBottom: "1px solid rgb(128, 128, 128, 0.3)" }}>
+    <div className="SubCategory ToddlersSubCategory" style={{ borderBottom: "1px solid rgb(128, 128, 128, 0.3)" }}>
         <div>
           <img src={props.imgUrl} alt={props.title} />
         </div>

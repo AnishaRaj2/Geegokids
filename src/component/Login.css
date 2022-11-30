@@ -1,6 +1,5 @@
 .login-wrapper {
-    color: white;
-    font-family: Gibson-Regular;
+    font-family: Gibson-Bold;
     width: 100%;
     min-height: 100vh;
     background-image: url("/public/image/gradienttitausta_kork2000px.png");
@@ -13,7 +12,7 @@
 }
 
 .login-wrapper form {
-    width: 80%;
+    width: 60%;
 }
 
 .login-wrapper label {
@@ -21,23 +20,51 @@
     margin: auto;
 }
 
+.login-wrapper label p {
+    font-size: 14px;
+}
+
 .login-wrapper label:nth-child(2) p {
     margin-top: 16px;
 }
 
 .login-wrapper h1 {
-    font-size: 60px;
+    color:  #0EB1AF;
     text-align: center;
-}
-
-.login-wrapper button {
-    text-align: center;
-    margin: 40px 0;
+    font-size: 40px;
 }
 
 .login-wrapper a {
     display: block;
     text-align: center;
+}
+
+.login-wrapper .register-form-link a {
+    color: black;
+    text-decoration: underline;
+    display: inline;
+}
+
+.login-wrapper .login-note {
+    width: 60%;
+    font-size: 14px;
+    font-family: Gibson-Regular;
+    text-align: center;
+    word-wrap: break-word;
+    padding-bottom: 10px;
+}
+
+.login-wrapper button {
+    font-size: 20px;
+    text-align: center;
+    margin: 40px 0 20px 0;
+    background-color: #032741;
+    color: white;
+}
+
+.login-wrapper button:hover {
+    background-color: #032741;
+
 }
 
 .login-wrapper label:nth-child(2) {
@@ -56,13 +83,27 @@
     display: none;
 }
 
+.login-wrapper .private-policy {
+    color: black;
+    font-size: 14px;
+}
+
 @media (min-width: 768px) {
+    .login-wrapper {
+        background-image: url("/public/image/bg site geego.jpg");
+    }
+
     .login-wrapper form {
-        width: 50%;
+        width: 40%;
     }
 
     .login-wrapper h1 {
-        font-size: 80px;
+        font-size: 50px;
+    }
+
+    .login-wrapper .login-note {
+        width: 40%;
+        padding-bottom: 20px;
     }
 }
 
@@ -73,7 +114,11 @@
     }
 
     .login-wrapper h1 {
-        font-size: 100px;
+        font-size: 60px;
     }
     
+    .login-wrapper .login-note {
+        width: 40%;
+    }
+
 }

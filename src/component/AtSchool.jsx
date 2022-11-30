@@ -10,11 +10,11 @@ const AtSchool = () => {
         <Button
           imgUrl="/image/ikoni_haasteet@3x.png"
           name="Challenges"
-          bgColor="Purple"
+          bgColor="#6B377C"
         />
       </Link>
       <Link to="/Skills">
-        <Button imgUrl="/image/ikoni_koulut.png" name="Skills" bgColor="Blue" />
+        <Button imgUrl="/image/ikoni_koulut.png" name="Skills" bgColor="#0074AC" />
       </Link>
     </div>
   );

@@ -1,12 +1,21 @@
 .SubCategory {
     width: 100%;
-    /* Remove height */
-    /* height: 100%;  */
     margin: auto;
-    font-family: Gibson-Regular;
+    font-family: Gibson-Bold;
     display: flex;
     flex-direction: row;
-    border-bottom: 2px solid rgb(128, 0, 128, 0.3);
+}
+
+.SubCategory.ChallengesSubCategory {
+    border-bottom: 2px solid  rgb(107, 55, 124,0.3);
+}
+
+.SubCategory.SkillsSubCategory {
+    border-bottom: 2px solid rgb(0, 116, 172,0.3);
+}
+
+.SubCategory.ToddlersSubCategory {
+    border-bottom: 2px solid  rgb(235, 106, 57,0.3);
 }
 
 .SubCategory div:first-child {
@@ -30,7 +39,6 @@
 
 .SubCategory div p:first-child {
     font-family: Gibson-Bold;
-    /* margin-bottom: 20px; */
 }
 
 .SubCategory div p {

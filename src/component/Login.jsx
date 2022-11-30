@@ -35,9 +35,22 @@ const Login = (props) => {
   return (
     <div className="login-wrapper">
       <h1>Log in</h1>
+      <p className="register-form-link">
+        Have a code? 
+        <a
+          href="https://app.geegokids.com/en/koodi/"
+          target="_blank"
+          rel="noreferrer"
+        > Register here!</a>
+      </p>
+      <p className="login-note">
+        This website is solely built for desktop devices. If you want to use
+        Geego on your mobile / tablet device, download the Geego App from App
+        Stores.
+      </p>
       <form onSubmit={handleSubmit}>
         <label>
-          <p>Username</p>
+          <p>Email / Username</p>
           <input
             type="text"
             name="username"
@@ -65,14 +78,24 @@ const Login = (props) => {
                 className="form-control"
                 onChange={(e) => setPassword(e.target.value)}
               />
-              <i className="fa-solid fa-eye-slash" onClick={handleShowPassword}></i>
+              <i
+                className="fa-solid fa-eye-slash"
+                onClick={handleShowPassword}
+              ></i>
             </>
           )}
         </label>
         <div>
           <button type="submit" className="btn btn-primary form-control">
-            Submit
+            Login
           </button>
+          <a className="private-policy"
+            href="https://www.geegokids.com/fi/kayttoehdot-ja-yksityisyydensuoja/verkkosivujen-tietosuojaseloste/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Geego Kids Private Policy
+          </a>
         </div>
       </form>
     </div>

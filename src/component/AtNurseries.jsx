@@ -11,7 +11,7 @@ const AtNurseries = () => {
         <Button
           imgUrl="/image/ikoni_tenavat.png"
           name="Toddlers"
-          bgColor="orangered"
+          bgColor= "#EB6A39"
         />
       </Link>
     </div>
