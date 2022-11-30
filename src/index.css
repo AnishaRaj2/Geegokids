@@ -15,7 +15,7 @@
 }
 
 .main-category {
-  font-family: Gibson-Regular;
+  font-family: Gibson-Bold;
 }
 
 .main-category h2 {
@@ -25,6 +25,7 @@
 }
 
 .main-category > p{
+  font-family: Gibson-Regular;
   line-height: 30px; 
   padding: 0 30px;
 }

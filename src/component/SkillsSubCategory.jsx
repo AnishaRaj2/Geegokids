@@ -12,7 +12,7 @@ const SkillsSubCategory = (props) => {
 
   return (
     <>
-      <div className="SubCategory" onClick={showDropDown}>
+      <div className="SubCategory SkillsSubCategory" onClick={showDropDown}>
         <div>
           <img src={props.imgUrl} alt={props.title} />
         </div>

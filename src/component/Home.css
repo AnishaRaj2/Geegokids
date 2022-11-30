@@ -1,28 +1,51 @@
-.Home {
+.Home div {
     display: flex;
     flex-direction: column;
-    align-items: center;    }
+    align-items: center;    
+}
 
-.Home .AtNurseries {
+.Home h1 {
+    width: 50%;
+    font-family: Gibson-Bold;
+    font-style: italic;
+    font-size: 50px;
+    color: #0EB1AF;
+    margin: auto;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 40px;
+}
+
+.Home div .AtNurseries {
     flex-grow: 1;
 }
 
-.Home .AtSchool {
+.Home div .AtSchool {
     flex-grow: 1;
 }
 
 @media (min-width: 768px) {
-    .Home {
+    .Home div {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
     }
 
-    .Home .AtNurseries {
+    .Home h1 {
+        width: 50%;
+    }
+
+    .Home div .AtNurseries {
         flex-grow: 1;
     }
     
-    .Home .AtSchool {
+    .Home div .AtSchool {
         flex-grow: 2;
+    }
+}
+
+@media (min-width: 992px) {
+    .Home h1 {
+        width: 50%;
     }
 }

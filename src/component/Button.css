@@ -1,11 +1,16 @@
+.Home .Button {
+    display: flex;
+    flex-direction: column;
+}
+
 .Button button {
     font-size: 1.5em;
     color: white;
-    font-family:  Gibson-Regular;
+    font-family:  Gibson-Bold;
     border: none;
     border-radius: 20px;
     padding: 40px 20px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
 
 .Button button img {
@@ -16,6 +21,19 @@
     margin-bottom: 20px;
 }
 
+.Button button p {
+    padding: 10px 0;
+    margin: 0 -20px;
+}
+
+.Button .description {
+    text-align: center;
+    width: 300px;
+    margin-top: 20px;
+    color: black;
+    font-family: Gibson-Bold;
+    font-size: 16px;
+}
 
 @media (min-width: 768px) {
     .Button button img {
@@ -25,16 +43,36 @@
         margin: auto;
         margin-bottom: 20px;
     }
+
+    .Button .description {
+        font-size: 16px;
+        width: 200px;
+    }
+
+    .Button button {
+        margin-top: 40px;
+    }
+
+
 }
 
 @media (min-width: 992px) {
     .Button button img {
-        width: 250px;
-        height: 250px;
+        width: 280px;
+        height: 280px;
         display: block;
         margin: auto;
-        margin-bottom: 20px;
     }
+
+    .Button .description {
+        font-size: 18px;
+        width: 250px;
+    }
+
+    .Button button {
+        margin-top: 50px;
+    }
+
     
 }
 

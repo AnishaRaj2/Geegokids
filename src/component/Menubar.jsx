@@ -13,22 +13,10 @@ const Menubar = (props) => {
       <div>
         <ul>
           <li>
-            <Link to="/AtNurseries">At nurseries</Link>
+            <Link to="/AtSchool">Schools</Link>
           </li>
           <li>
-            <Link to="/AtSchool">At school</Link>
-          </li>
-        </ul>
-        <ul>
-          <li>
-            <a
-              href="https://www.geegokids.com/"
-              target="_blank"
-              rel="noreferrer"
-            >
-              <i className="fa-solid fa-house"></i>
-              Home page
-            </a>
+            <Link to="/AtNurseries">Kindergartens</Link>
           </li>
           <li>
             <Logout token={props.token} />
