@@ -20,7 +20,7 @@ const SkillsSubCategory = (props) => {
           <p>{props.title}</p>
         </div>
       </div>
-      <ul className="TaskGroup" onClick={showDropDown}>
+      <ul className="task-groups" onClick={showDropDown}>
         {state
           ? props.sportschools.map((skill) => {
               return (
@@ -28,7 +28,10 @@ const SkillsSubCategory = (props) => {
                   <SkillsTaskGroup
                     title={skill.title}
                     key={skill.id}
-                    imgUrl={skill.sportschool_task_groups[0].sportschool_tasks[0].thumbnail}
+                    imgUrl={
+                      skill.sportschool_task_groups[0].sportschool_tasks[0]
+                        .thumbnail
+                    }
                   />
                 </li>
               );
