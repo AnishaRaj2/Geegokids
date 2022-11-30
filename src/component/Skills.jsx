@@ -20,15 +20,13 @@ const Skills = (props) => {
       </p>
       <div className="sub-categrory-group">
         {props.skillsState.map((skillsSubCategory) => {
-          return skillsSubCategory.sportschool_task_groups.length > 0 ? (
+          return skillsSubCategory.sportschools.length > 0 ? (
             <div className="sub-category">
               <SkillsSubCategory
                 title={skillsSubCategory.title}
                 key={skillsSubCategory.id}
-                imgUrl={
-                  skillsSubCategory.sportschool_task_groups[0]
-                    .sportschool_tasks[0].thumbnail
-                }
+                imgUrl={skillsSubCategory.icon}
+                sportschools={skillsSubCategory.sportschools}
               />
             </div>
           ) : (

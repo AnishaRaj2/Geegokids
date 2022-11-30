@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-// import SkillsTaskGroup from "./SkillsTaskGroup.jsx";
+import SkillsTaskGroup from "./SkillsTaskGroup.jsx";
 import "./SubCategory.css";
 import "../index.css";
 
@@ -12,29 +12,29 @@ const SkillsSubCategory = (props) => {
 
   return (
     <>
-      <div className="SubCategory SkillsSubCategory" onClick={showDropDown}>
+      <div className="SubCategory" onClick={showDropDown}>
         <div>
-          <img src={props.imgUrl} alt={props.name} />
+          <img src={props.imgUrl} alt={props.title} />
         </div>
         <div>
           <p>{props.title}</p>
         </div>
       </div>
-      {/* <ul className="TaskGroup" onClick={showDropDown}>
+      <ul className="TaskGroup" onClick={showDropDown}>
         {state
-          ? props.sportschool_task_groups.map((skill) => {
+          ? props.sportschools.map((skill) => {
               return (
                 <li>
                   <SkillsTaskGroup
                     title={skill.title}
                     key={skill.id}
-                    imgUrl={skill.task_groups[0].tasks[0].thumbnail}
+                    imgUrl={skill.sportschool_task_groups[0].tasks[0].thumbnail}
                   />
                 </li>
               );
             })
           : null}
-      </ul> */}
+      </ul>
     </>
   );
 };
