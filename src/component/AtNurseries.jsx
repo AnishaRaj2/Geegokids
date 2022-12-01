@@ -11,8 +11,8 @@ const AtNurseries = () => {
         <Button
           imgUrl="/image/ikoni_tenavat.png"
           name="TODDLERS"
-          bgColor="#EB6A39" 
-          bgColor2="rgb(235, 106, 57 / 0.3)"
+          bgColor2="rgb(235, 106, 57 / 30%)"
+          bgColor="#EB6A39"
           description="Get kindergarten-age children moving and learning new skills."
         />
       </Link>
