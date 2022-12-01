@@ -91,6 +91,8 @@
 @media (min-width: 768px) {
     .login-wrapper {
         background-image: url("/public/image/bg site geego.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
     }
 
     .login-wrapper form {
