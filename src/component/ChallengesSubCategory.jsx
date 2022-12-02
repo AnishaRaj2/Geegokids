@@ -27,6 +27,7 @@ const ChallengesSubCategory = (props) => {
                 <li>
                   <ChallengesTaskGroup
                     title={challenge.title}
+                    description={challenge.description}
                     key={challenge.id}
                     imgUrl={challenge.task_groups[0].tasks[0].thumbnail}
                     challenge = {challenge}

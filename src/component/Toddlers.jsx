@@ -26,6 +26,7 @@ const Toddlers = (props) => {
                 title={toddler.title}
                 imgUrl={toddler.icon}
                 key={toddler.id}
+                toddler={toddler}
               />
             </div>
           ) : (

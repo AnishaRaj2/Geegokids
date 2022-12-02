@@ -1,6 +1,5 @@
 import React from "react";
 import ChallengesTask from "./ChallengesTask";
-
 import "./Tasks.css";
 import "../index.css";
 
@@ -14,14 +13,19 @@ const ChallengesTasks = (props) => {
           <i className="fa-solid fa-circle"></i>
           <i className="fa-solid fa-circle"></i>
         </h2>
-        <p>Use your air track to learn different acrobatic tricks.</p>
+        <p>{props.description}</p>
       </div>
       <ul>
         {props.challenge.task_groups.map((tasks) => {
           return tasks.tasks.map((task) => {
             return (
               <li>
-                <ChallengesTask imgUrl={task.thumbnail} title={task.title} />
+                <ChallengesTask
+                  imgUrl={task.thumbnail}
+                  title={task.title}
+                  video={task.video}
+                  description={task.description}
+                />
               </li>
             );
           });

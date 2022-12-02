@@ -6,11 +6,8 @@ import AtNurseries from "./component/AtNurseries";
 import AtSchool from "./component/AtSchool";
 import Menubar from "./component/Menubar";
 import Challenges from "./component/Challenges";
-// import ChallengesTasks from "./component/ChallengesTasks";
 import Skills from "./component/Skills";
-import SkillsTask from "./component/SkillsTask";
 import Toddlers from "./component/Toddlers";
-import ToddlersTasks from "./component/ToddlersTasks";
 import Login from "./component/Login";
 import useToken from "./useToken";
 import ChallengesFetchAPI from "./ChallengesFetchAPI";
@@ -73,9 +70,6 @@ const App = () => {
             path="/Toddlers"
             element={<Toddlers toddlersState={toddlersState} />}
           ></Route>
-          {/* <Route path="/ChallengesTasks/" element={<ChallengesTasks />}></Route> */}
-          <Route path="/SkillsTask" element={<SkillsTask />}></Route>
-          <Route path="/ToddlersTasks" element={<ToddlersTasks />}></Route>
         </Routes>
       </Router>
     </div>

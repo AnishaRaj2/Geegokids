@@ -20,10 +20,10 @@ const ChallengesTaskGroup = (props) => {
           <p>{props.title}</p>
         </div>
       </div>
-      <div></div>
       <ChallengesTasks
         challenge={props.challenge}
         title={props.title}
+        description={props.description}
         trigger={isOpen}
       />
     </div>

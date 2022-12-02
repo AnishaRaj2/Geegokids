@@ -13,7 +13,7 @@
 }
 
 .Tasks h2 {
-    padding: 0;
+    padding: 10px;
 }
 
 .Tasks i {
@@ -48,6 +48,13 @@
     display: flex;
     padding: 5px 10px;
 }
+
+@media (min-width: 576px) {
+    .Tasks ul li {
+        width: 33%;
+        padding: 5px;
+    }
+  }
 
 @media (min-width: 992px) {
     .Tasks ul li {
