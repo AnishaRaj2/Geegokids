@@ -47,6 +47,11 @@
 .Tasks ul li {
     display: flex;
     padding: 5px 10px;
-    background-color: gray;
 }
 
+@media (min-width: 992px) {
+    .Tasks ul li {
+        width: 25%;
+        padding: 5px;
+    }
+  }
