@@ -30,8 +30,7 @@ const SkillsSubCategory = (props) => {
                     description={skill.description}
                     key={skill.id}
                     imgUrl={
-                      skill.sportschool_task_groups[0].sportschool_tasks[0]
-                        .thumbnail
+                      skill.sportschool_task_groups[0].sportschool_tasks[0].thumbnail
                     }
                     skill={skill}
                   />

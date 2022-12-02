@@ -3,7 +3,6 @@ import SkillsTask from "./SkillsTask";
 import "./Tasks.css";
 import "../index.css";
 
-
 const SkillsTasks = (props) => {
   return props.trigger ? (
     <div className="Tasks">
@@ -21,7 +20,12 @@ const SkillsTasks = (props) => {
           return tasks.sportschool_tasks.map((task) => {
             return (
               <li>
-                <SkillsTask imgUrl={task.thumbnail} title={task.title} />
+                <SkillsTask
+                  imgUrl={task.thumbnail}
+                  title={task.title}
+                  video={task.video}
+                  description={task.description}
+                />
               </li>
             );
           });

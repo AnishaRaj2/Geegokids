@@ -23,11 +23,11 @@
     position: fixed;
     top: 0;
     right: 0;
-    width: 30%;
+    width: 35%;
     height: 100vh;
     word-wrap: break-word;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;    
+    text-align: left; 
 }

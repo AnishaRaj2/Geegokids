@@ -18,7 +18,11 @@ const ToddlersTasks = (props) => {
         {props.toddler.tasks.map((task) => {
           return (
             <li>
-              <ToddlersTask imgUrl={task.thumbnail} title={task.title} />
+              <ToddlersTask
+                imgUrl={task.thumbnail}
+                title={task.title}
+                video={task.video}
+              />
             </li>
           );
         })}
