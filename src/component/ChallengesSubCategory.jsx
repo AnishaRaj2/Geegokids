@@ -20,7 +20,7 @@ const ChallengesSubCategory = (props) => {
           <p>{props.title}</p>
         </div>
       </div>
-      <ul className="task-groups" onClick={showDropDown}>
+      <ul className="task-groups">
         {state
           ? props.challenges.map((challenge) => {
               return (
@@ -29,6 +29,7 @@ const ChallengesSubCategory = (props) => {
                     title={challenge.title}
                     key={challenge.id}
                     imgUrl={challenge.task_groups[0].tasks[0].thumbnail}
+                    challenge = {challenge}
                   />
                 </li>
               );

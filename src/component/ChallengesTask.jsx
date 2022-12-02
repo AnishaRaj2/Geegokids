@@ -1,17 +1,15 @@
 import React from "react";
+import "./Task.css";
 
 const ChallengesTask = (props) => {
   return (
-    <div className="ChallengesTask">
-      <h1>
-        {props.challengesState.map((challengesSubCategory) => {
-        return challengesSubCategory.challenges[5].title
-        })}
-      </h1>
-      <p>Lorem ipsum dolor sit amet.</p>
-      
-    </div>
-  );
+    <div className="Task ChallengesTask">
+      <div>
+        <img src={props.imgUrl} alt={props.title} />
+      </div>
+      <div>{props.title}</div>
+    </div> 
+  )
 };
 
 export default ChallengesTask;
