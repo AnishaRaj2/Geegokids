@@ -8,7 +8,7 @@ const ChallengesTask = (props) => {
   const [isFlex, setIsFlex] = useState("none");
 
   const handleClick = () => {
-    setIsOpen(!isOpen);
+    setIsOpen(true);
     setIsFlex("flex");
   };
 
@@ -26,6 +26,7 @@ const ChallengesTask = (props) => {
         trigger={isOpen}
         description={props.description}
         display={isFlex}
+        setTrigger={setIsOpen}
       />
     </div>
   );

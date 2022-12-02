@@ -8,15 +8,26 @@
     font-family: Gibson-Bold;
 }
 
+.Video i.fa-xmark {
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 5%;
+    height: 5%;
+    font-size: 30px;
+    color: black;
+}
+
 .Video div {
     position: fixed;
     top: 0;
     right: 0;
-    width: 40%;
+    width: 30%;
     height: 100vh;
     word-wrap: break-word;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;    
+    align-items: flex-start;    
 }
