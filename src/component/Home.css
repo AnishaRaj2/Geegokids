@@ -42,6 +42,7 @@
     background-image: url("/public/image/bg site geego.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+    min-height: 100vh;
 }
 }
