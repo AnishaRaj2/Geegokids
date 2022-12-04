@@ -35,4 +35,4 @@ const ChallengesTasks = (props) => {
   ) : ("");
 };
 
-export default ChallengesTask;
+export default ChallengesTasks;
