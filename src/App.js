@@ -7,9 +7,6 @@ import Menubar from "./component/Menubar";
 import Challenges from "./component/Challenges";
 import Skills from "./component/Skills";
 import Toddlers from "./component/Toddlers";
-// import ChallengesTask from "./component/ChallengesTask";
-// import SkillsTask from "./component/SkillsTask";
-// import ToddlersTasks from "./component/ToddlersTasks";
 import Login from "./component/Login";
 import useToken from "./useToken";
 import ChallengesFetchAPI from "./ChallengesFetchAPI";
@@ -66,9 +63,6 @@ const App = () => {
           <Route path="/Challenges" element={<Challenges challengesState={challengesState} />}></Route>
           <Route path="/Skills" element={<Skills skillsState={skillsState} />}></Route>
           <Route path="/Toddlers" element={<Toddlers toddlersState={toddlersState} />}></Route>
-          {/* <Route path="/ChallengesTask" element={<ChallengesTask challengesState={challengesState} />}></Route> */}
-          {/* <Route path="/SkillsTask" element={<SkillsTask />}></Route> */}
-          {/* <Route path="/ToddlersTasks" element={<ToddlersTasks />}></Route> */}
         </Routes>
       </Router>
     </div>
