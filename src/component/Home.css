@@ -1,4 +1,9 @@
+.Home {
+    width: 100%;
+}
+
 .Home div {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -27,10 +32,6 @@
         flex-direction: row;
         justify-content: space-around;
     }
-
-    .Home h1 {
-        width: 50%;
-    }
 }
 
 @media (min-width: 1200px) {
@@ -42,6 +43,6 @@
     background-image: url("/public/image/bg site geego.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
-}
+    background-position: start;
+    }
 }

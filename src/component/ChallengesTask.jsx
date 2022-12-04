@@ -7,7 +7,7 @@ const ChallengesTask = (props) => {
   const [isOpen, setIsOpen] = useState(false);
   const [isFlex, setIsFlex] = useState("none");
 
-  const handleClick = () => {
+  const handleClick = (props) => {
     setIsOpen(true);
     setIsFlex("flex");
   };

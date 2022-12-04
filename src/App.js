@@ -13,6 +13,7 @@ import useToken from "./useToken";
 import ChallengesFetchAPI from "./ChallengesFetchAPI";
 import ToddlersFetchAPI from "./ToddlersFetchAPI";
 import SkillsFetchAPI from "./SkillsFetchAPI";
+
 import "./App.css";
 
 const App = () => {
@@ -65,7 +66,10 @@ const App = () => {
             path="/Challenges"
             element={<Challenges challengesState={challengesState} />}
           ></Route>
-          <Route path="/Skills" element={<Skills skillsState={skillsState} />}></Route>
+          <Route
+            path="/Skills"
+            element={<Skills skillsState={skillsState} />}
+          ></Route>
           <Route
             path="/Toddlers"
             element={<Toddlers toddlersState={toddlersState} />}

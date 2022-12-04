@@ -1,10 +1,11 @@
 .login-wrapper {
     font-family: Gibson-Bold;
     width: 100%;
-    min-height: 100vh;
+    height: 100vh;
     background-image: url("/public/image/gradienttitausta_kork2000px.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: start;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,6 +94,7 @@
         background-image: url("/public/image/bg site geego.jpg");
         background-repeat: no-repeat;
         background-position: center;
+        background-position: start;
     }
 
     .login-wrapper form {

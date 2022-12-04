@@ -14,7 +14,14 @@ const SkillsSubCategory = (props) => {
     <>
       <div className="SubCategory SkillsSubCategory" onClick={showDropDown}>
         <div>
-          <img src={props.imgUrl} alt={props.title} />
+          {props.imgUrl !=null && <img
+            src={props.imgUrl}
+            alt={props.title}
+          />}
+           {props.imgUrl ==null && <img
+            src="/image/ikoni_koulut.png"
+            alt={props.title}
+          />}
         </div>
         <div>
           <p>{props.title}</p>
@@ -30,7 +37,8 @@ const SkillsSubCategory = (props) => {
                     description={skill.description}
                     key={skill.id}
                     imgUrl={
-                      skill.sportschool_task_groups[0].sportschool_tasks[0].thumbnail
+                      skill.sportschool_task_groups[0].sportschool_tasks[0]
+                        .thumbnail
                     }
                     skill={skill}
                   />
