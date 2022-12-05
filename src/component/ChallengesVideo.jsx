@@ -7,6 +7,7 @@ const ChallengesVideo = (props) => {
         className="Video" 
         style={{ display: props.display }}
       >
+        <div className="dummy-block"></div>
         <video controls>
           <source 
             src={props.video} 
