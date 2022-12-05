@@ -8,8 +8,7 @@ const ChallengesTaskGroup = (props) => {
   return (
     <div>
       <Link to={`/Challenges/${props.title}`}>
-        <div
-          className="TaskGroup ChallengesTaskGroup">
+        <div className="TaskGroup ChallengesTaskGroup">
           <div>
             <img src={props.imgUrl} alt={props.title} />
           </div>
