@@ -24,15 +24,18 @@ const ChallengesSubCategory = (props) => {
         {state
           ? props.challenges.map((challenge) => {
               return (
-                <li>
-                  <ChallengesTaskGroup
-                    title={challenge.title}
-                    description={challenge.description}
-                    key={challenge.id}
-                    imgUrl={challenge.task_groups[0] && challenge.task_groups[0].tasks[0] && challenge.task_groups[0].tasks[0].thumbnail}
-                    challenge={challenge}
-                  />
-                </li>
+                challenge.task_groups[0] &&
+                challenge.task_groups[0].tasks[0] && (
+                  <li>
+                    <ChallengesTaskGroup
+                      title={challenge.title}
+                      description={challenge.description}
+                      key={challenge.id}
+                      imgUrl={challenge.task_groups[0].tasks[0].thumbnail}
+                      challenge={challenge}
+                    />
+                  </li>
+                )
               );
             })
           : null}
