@@ -27,6 +27,7 @@ const ChallengesTask = (props) => {
         trigger={isOpen}
         display={isFlex}
         setTrigger={setIsOpen}
+        tasks={tasks}
       />
     </div>
   );
