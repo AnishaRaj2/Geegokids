@@ -31,6 +31,7 @@
 
     .Home h1 {
         width: 50%;
+        color: white
     }
 
     .Home {
@@ -43,6 +44,10 @@
 @media (min-width: 1200px) {
     .Home div {
         width: 50%;
+    }
+
+    .Home h1 {
+        color: #0EB1AF
     }
 
     .Home {
