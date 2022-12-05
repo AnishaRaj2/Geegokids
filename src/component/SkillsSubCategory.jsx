@@ -28,10 +28,7 @@ const SkillsSubCategory = (props) => {
                   <SkillsTaskGroup
                     title={skill.title}
                     key={skill.id}
-                    imgUrl={
-                      skill.sportschool_task_groups[0].sportschool_tasks[0]
-                        .thumbnail
-                    }
+                    imgUrl={skill.sportschool_task_groups[0].sportschool_tasks[0].thumbnail}
                   />
                 </li>
               );
