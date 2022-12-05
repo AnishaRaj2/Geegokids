@@ -13,10 +13,10 @@ const Menubar = (props) => {
       <div>
         <ul>
           <li>
-            <Link to="/AtSchool">Schools</Link>
+            <Link to="/AtSchools">Schools</Link>
           </li>
           <li>
-            <Link to="/AtNurseries">Kindergartens</Link>
+            <Link to="/AtKindergartens">Kindergartens</Link>
           </li>
           <li>
             <Logout token={props.token} />

@@ -4,6 +4,7 @@
     font-family: Gibson-Bold;
     display: flex;
     flex-direction: row;
+    padding: 15px 0;
 }
 
 .SubCategory.ChallengesSubCategory {

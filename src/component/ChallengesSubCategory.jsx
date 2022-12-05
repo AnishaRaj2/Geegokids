@@ -29,8 +29,8 @@ const ChallengesSubCategory = (props) => {
                     title={challenge.title}
                     description={challenge.description}
                     key={challenge.id}
-                    imgUrl={challenge.task_groups[0].tasks[0].thumbnail}
-                    challenge = {challenge}
+                    imgUrl={challenge.task_groups[0] && challenge.task_groups[0].tasks[0] && challenge.task_groups[0].tasks[0].thumbnail}
+                    challenge={challenge}
                   />
                 </li>
               );

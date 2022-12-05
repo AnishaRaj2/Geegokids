@@ -1,4 +1,4 @@
-.Video video{
+.Video {
     position: fixed;
     top: 0;
     left: 0;
@@ -6,6 +6,20 @@
     height: 100vh;
     background-color: white;
     font-family: Gibson-Bold;
+    display: flex;
+}
+
+.Video video {
+    width: 33%;
+}
+
+.Video div {
+    width: 33%;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left; 
 }
 
 .Video i.fa-solid {
@@ -34,15 +48,3 @@
     left: 0;
 }
 
-.Video div {
-    position: fixed;
-    top: 0;
-    right: 0;
-    width: 35%;
-    height: 100vh;
-    word-wrap: break-word;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: left; 
-}

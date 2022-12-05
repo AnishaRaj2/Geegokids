@@ -2,11 +2,9 @@ import React from "react";
 import "./Video.css";
 
 const ChallengesVideo = (props) => {
-  
   return props.trigger ? (
-    <div
-      className="Video"
-      style={{ display: props.display }}>
+    <div className="Video" style={{ display: props.display }}>
+      <div className="dummy-block"></div>
       <video controls>
         <source src={props.video} type="video/mp4" />
       </video>

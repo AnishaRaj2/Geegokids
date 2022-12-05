@@ -60,8 +60,8 @@ const App = () => {
         <Menubar token={token} />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/AtNurseries" element={<AtNurseries />}></Route>
-          <Route path="/AtSchool" element={<AtSchool />}></Route>
+          <Route path="/AtKindergartens" element={<AtNurseries />}></Route>
+          <Route path="/AtSchools" element={<AtSchool />}></Route>
           <Route
             path="/Challenges"
             element={<Challenges challengesState={challengesState} />}

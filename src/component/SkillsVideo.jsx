@@ -5,6 +5,7 @@ import "./Video.css";
 const SkillsVideo = (props) => {
     return (props.trigger) ?
     (<div className="Video" style={{ display: props.display }}>
+      <div className="dummy-block"></div>
       <video controls>
         <source src={props.video} type="video/mp4" />
       </video>
