@@ -33,4 +33,13 @@
     padding-left: 20px;
 }
 
+div a {
+    text-decoration: none;
+    color: black;
+}
+
+div a:hover {
+    color: black;
+}
+
 

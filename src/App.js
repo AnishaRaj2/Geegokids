@@ -6,6 +6,7 @@ import AtNurseries from "./component/AtNurseries";
 import AtSchool from "./component/AtSchool";
 import Menubar from "./component/Menubar";
 import Challenges from "./component/Challenges";
+import ChallengesTasks from "./component/ChallengesTasks";
 import Skills from "./component/Skills";
 import Toddlers from "./component/Toddlers";
 import Login from "./component/Login";
@@ -73,6 +74,10 @@ const App = () => {
           <Route
             path="/Toddlers"
             element={<Toddlers toddlersState={toddlersState} />}
+          ></Route>
+          <Route
+            path="/Challenges/:title"
+            element={<ChallengesTasks challengesState={challengesState} />}
           ></Route>
         </Routes>
       </Router>

@@ -1,5 +1,5 @@
 .Tasks {
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -13,7 +13,8 @@
 }
 
 .Tasks h2 {
-    padding: 10px;
+    font-size: 30px;
+    padding: 30px;
 }
 
 .Tasks i {
@@ -36,6 +37,7 @@
 
 .Tasks p{
     font-family: Gibson-regular;
+    padding: 0 30px;
 }
 
 .Tasks ul {
