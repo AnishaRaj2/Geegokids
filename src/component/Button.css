@@ -51,6 +51,7 @@
     .Button .description {
         font-size: 16px;
         width: 200px;
+        color: white
     }
 
     .Button .description,
@@ -87,6 +88,7 @@
         font-size: 15px;
         width: 200px;
         text-align: center;
+        color: black
     }
 
     .Button button {
