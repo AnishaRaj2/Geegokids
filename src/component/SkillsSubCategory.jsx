@@ -13,9 +13,14 @@ const SkillsSubCategory = (props) => {
   return (
     <>
       <div className="SubCategory SkillsSubCategory" onClick={showDropDown}>
-        <div>
-          <img src={props.imgUrl} alt={props.title} />
-        </div>
+        {props.imgUrl != null && <img
+          src={props.imgUrl}
+          alt={props.title}
+        />}
+        {props.imgUrl == null && <img
+          src="/image/ikoni_koulut.png"
+          alt={props.title}
+        />}
         <div>
           <p>{props.title}</p>
         </div>
@@ -23,16 +28,16 @@ const SkillsSubCategory = (props) => {
       <ul className="task-groups" onClick={showDropDown}>
         {state
           ? props.sportschools.map((skill) => {
-              return (
-                <li>
-                  <SkillsTaskGroup
-                    title={skill.title}
-                    key={skill.id}
-                    imgUrl={skill.sportschool_task_groups[0].sportschool_tasks[0].thumbnail}
-                  />
-                </li>
-              );
-            })
+            return (
+              <li>
+                <SkillsTaskGroup
+                  title={skill.title}
+                  key={skill.id}
+                  imgUrl={skill.sportschool_task_groups[0].sportschool_tasks[0].thumbnail}
+                />
+              </li>
+            );
+          })
           : null}
       </ul>
     </>
