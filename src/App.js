@@ -6,9 +6,9 @@ import AtNurseries from "./component/AtNurseries";
 import AtSchool from "./component/AtSchool";
 import Menubar from "./component/Menubar";
 import Challenges from "./component/Challenges";
-import ChallengesTask from "./component/ChallengesTask";
+import ChallengesTasks from "./component/ChallengesTasks";
 import Skills from "./component/Skills";
-import SkillsTask from "./component/SkillsTask";
+import SkillsTasks from "./component/SkillsTasks";
 import Toddlers from "./component/Toddlers";
 import ToddlersTasks from "./component/ToddlersTasks";
 import Login from "./component/Login";
@@ -16,6 +16,7 @@ import useToken from "./useToken";
 import ChallengesFetchAPI from "./ChallengesFetchAPI";
 import ToddlersFetchAPI from "./ToddlersFetchAPI";
 import SkillsFetchAPI from "./SkillsFetchAPI";
+
 import "./App.css";
 
 const App = () => {
@@ -62,20 +63,32 @@ const App = () => {
         <Menubar token={token} />
         <Routes>
           <Route path="/" element={<Home />}></Route>
-          <Route path="/AtNurseries" element={<AtNurseries />}></Route>
-          <Route path="/AtSchool" element={<AtSchool />}></Route>
+          <Route path="/AtKindergartens" element={<AtNurseries />}></Route>
+          <Route path="/AtSchools" element={<AtSchool />}></Route>
           <Route
             path="/Challenges"
             element={<Challenges challengesState={challengesState} />}
           ></Route>
-          <Route path="/Skills" element={<Skills skillsState={skillsState} />}></Route>
+          <Route
+            path="/Challenges/:title"
+            element={<ChallengesTasks challengesState={challengesState} />}
+          ></Route>
+          <Route
+            path="/Skills"
+            element={<Skills skillsState={skillsState} />}
+          ></Route>
+          <Route
+            path="/Skills/:title"
+            element={<SkillsTasks skillsState={skillsState} />}
+          ></Route>
           <Route
             path="/Toddlers"
             element={<Toddlers toddlersState={toddlersState} />}
           ></Route>
-          <Route path="/ChallengesTask" element={<ChallengesTask challengesState={challengesState} />}></Route>
-          <Route path="/SkillsTask" element={<SkillsTask />}></Route>
-          <Route path="/ToddlersTasks" element={<ToddlersTasks />}></Route>
+          <Route
+            path="/Toddlers/:title"
+            element={<ToddlersTasks toddlersState={toddlersState} />}
+          ></Route>
         </Routes>
       </Router>
     </div>

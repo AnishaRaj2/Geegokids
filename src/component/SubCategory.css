@@ -4,6 +4,7 @@
     font-family: Gibson-Bold;
     display: flex;
     flex-direction: row;
+    padding: 15px 0;
 }
 
 .SubCategory.ChallengesSubCategory {
@@ -31,14 +32,9 @@
 
 .SubCategory div:nth-child(2) {
     width: 60%;
-    display: flex;
-    flex-direction: column;
     margin-left: 20px;
-    justify-content: center;
-}
-
-.SubCategory div p:first-child {
-    font-family: Gibson-Bold;
+    display: flex;
+    align-items: center;
 }
 
 .SubCategory div p {

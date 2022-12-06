@@ -6,13 +6,15 @@ import "../index.css";
 
 const ChallengesTaskGroup = (props) => {
   return (
-    <div className="TaskGroup ChallengesTaskGroup">
-      <Link to="/ChallengesTask">
-        <div>
-          <img src={props.imgUrl} alt={props.title} />
-        </div>
-        <div>
-          <p>{props.title}</p>
+    <div>
+      <Link to={`/Challenges/${props.title}`}>
+        <div className="TaskGroup ChallengesTaskGroup">
+          <div>
+            <img src={props.imgUrl} alt={props.title} />
+          </div>
+          <div>
+            <p>{props.title}</p>
+          </div>
         </div>
       </Link>
     </div>

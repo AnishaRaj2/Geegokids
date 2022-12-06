@@ -1,0 +1,38 @@
+.Video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    font-family: Gibson-Bold;
+    display: flex;
+}
+
+.Video video {
+    width: 33%;
+}
+
+.Video div {
+    width: 33%;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left; 
+}
+
+.Video .fa-xmark {
+    position: fixed;
+    top: 0;
+    right: 0;
+    display: block;
+    width: 5%;
+    height: 5%;
+    font-size: 20px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.Video h4 {
+    padding-left: 30px;
+}

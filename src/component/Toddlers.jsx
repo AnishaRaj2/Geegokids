@@ -19,19 +19,21 @@ const Toddlers = (props) => {
         inner Geego and set an example!
       </p>
       <div className="sub-categrory-group">
-        {props.toddlersState.map((toddler) => {
-          return toddler.tasks.length > 0 ? (
-            <div className="sub-category">
-              <ToddlersSubCategory
-                title={toddler.title}
-                imgUrl={toddler.icon}
-                key={toddler.id}
-              />
-            </div>
-          ) : (
-            ""
-          );
-        })}
+        {props.toddlersState &&
+          props.toddlersState.map((toddler) => {
+            return toddler.tasks.length > 0 ? (
+              <div className="sub-category">
+                <ToddlersSubCategory
+                  title={toddler.title}
+                  imgUrl={toddler.icon}
+                  key={toddler.id}
+                  toddler={toddler}
+                />
+              </div>
+            ) : (
+              ""
+            );
+          })}
       </div>
     </div>
   );

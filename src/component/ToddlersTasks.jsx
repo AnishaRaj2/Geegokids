@@ -1,15 +1,42 @@
 import React from "react";
-// import ToddlersFetchAPI from "./ToddlersFetchAPI";
+import { useParams } from "react-router";
 import ToddlersTask from "./ToddlersTask";
+import "./Tasks.css";
+import "../index.css";
 
-const ToddlersTasks = () => {
+const ToddlersTasks = (props) => {
+  const { title } = useParams();
+
   return (
-      <div>
-        <h1>ToddlersTask</h1>
-        <ul>
-            <ToddlersTask />
-        </ul>
-      </div>
+    <div className="Tasks ToddlersTasks">
+      {props.toddlersState && props.toddlersState
+        .filter((toddler) => toddler.title === title)
+        .map((toddler, index) => {
+          return (
+            <div>
+              <h2 key={index}>
+                {toddler.title}
+                <i className="fa-solid fa-circle"></i>
+                <i className="fa-solid fa-circle"></i>
+                <i className="fa-solid fa-circle"></i>
+              </h2>
+              <ul>
+                {toddler.tasks.map((task) => {
+                  return (
+                    <li>
+                      <ToddlersTask
+                        imgUrl={task.thumbnail}
+                        title={task.title}
+                        video={task.video}
+                      />
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+          );
+        })}
+    </div>
   );
 };
 
