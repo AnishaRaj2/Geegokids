@@ -9,7 +9,7 @@ const ChallengesTasks = (props) => {
 
   return (
     <div className="Tasks">
-      {props.challengesState.map((challengesSubcategory) => {
+      {props.challengesState && props.challengesState.map((challengesSubcategory) => {
         return challengesSubcategory.challenges
           .filter((challenge) => challenge.title === title)
           .map((challenge, index) => {

@@ -22,29 +22,17 @@
     text-align: left; 
 }
 
-.Video i.fa-solid {
-    display: block;
-    width: 5%;
-    height: 5%;
-    font-size: 30px;
-    color: rgb(0, 0, 0, 0.5);
-}
-
-.Video i.fa-xmark {
+.Video .fa-xmark {
     position: fixed;
     top: 0;
     right: 0;
+    display: block;
+    width: 5%;
+    height: 5%;
+    font-size: 20px;
+    color: rgb(0, 0, 0, 0.5);
 }
 
-.Video i.fa-forward {
-    position: fixed;
-    top: 50%;
-    right: 0;
+.Video h4 {
+    padding-left: 30px;
 }
-
-.Video i.fa-backward {
-    position: fixed;
-    top: 50%;
-    left: 0;
-}
-

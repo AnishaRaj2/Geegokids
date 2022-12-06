@@ -8,8 +8,8 @@ const SkillsTasks = (props) => {
   const { title } = useParams();
 
   return (
-    <div className="Tasks">
-      {props.skillsState.map((skillsSubCategory) => {
+    <div className="Tasks SkillsTasks">
+      {props.skillsState && props.skillsState.map((skillsSubCategory) => {
         return skillsSubCategory.sportschools.filter((skill) => skill.title === title).map((skill, index) => {
           return (
             <div>

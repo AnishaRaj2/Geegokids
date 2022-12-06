@@ -8,8 +8,8 @@ const ToddlersTasks = (props) => {
   const { title } = useParams();
 
   return (
-    <div className="Tasks">
-      {props.toddlersState
+    <div className="Tasks ToddlersTasks">
+      {props.toddlersState && props.toddlersState
         .filter((toddler) => toddler.title === title)
         .map((toddler, index) => {
           return (

@@ -13,8 +13,8 @@
 }
 
 .Tasks h2 {
-    font-size: 30px;
-    padding: 30px;
+    font-size: 40px;
+    padding: 20px;
 }
 
 .Tasks i {
@@ -35,7 +35,7 @@
     font-size: 5px;
 }
 
-.Tasks p{
+.Tasks p {
     font-family: Gibson-regular;
     padding: 0 30px;
 }
@@ -51,23 +51,11 @@
     padding: 5px 10px;
 }
 
-/* @media (min-width: 768px) {
-    .Tasks ul li {
-        width: 50%;
-        padding: 5px;
-    }
-  } */
-
-@media (min-width: 992x) {
+@media (min-width: 992px) {
     .Tasks ul li {
         width: 33%;
         padding: 5px;
     }
-  }
+} 
 
-@media (min-width: 1200px) {
-    .Tasks ul li {
-        width: 25%;
-        padding: 5px;
-    }
-  }
+
