@@ -60,9 +60,8 @@
         margin-top: 20px;
      }
 
-
-    .Button button {
-        margin-top: 40px;
+    .AtSchool .Button button {
+        margin: 50px 50px 0 50px;
     }
 }
 
@@ -87,10 +86,6 @@
         font-size: 15px;
         width: 200px;
         text-align: center;
-    }
-
-    .Button button {
-        margin-top: 50px;
     }
 }
 
