@@ -23,7 +23,7 @@ const ChallengesVideo = (props) => {
           <p>{props.description}</p>
         </div>
       </div>
-    ) : ""
+    ) : ("");
 };
 
 export default ChallengesVideo;
