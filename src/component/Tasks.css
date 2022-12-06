@@ -14,7 +14,7 @@
 }
 
 .Tasks h2 {
-    padding: 10px 15px;
+    padding: 30px 10px 20px;
 }
 
 .Tasks i {
@@ -37,6 +37,7 @@
 
 .Tasks p{
     font-family: Gibson-regular;
+    padding: 20px;
 }
 
 .Tasks ul {
