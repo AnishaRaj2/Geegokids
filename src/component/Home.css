@@ -1,7 +1,3 @@
-.Home {
-    width: 100%;
-}
-
 .Home div {
     width: 100%;
     display: flex;
@@ -44,5 +40,6 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: start;
+    min-height: 100vh;
     }
 }
