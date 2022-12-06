@@ -9,9 +9,9 @@
     display: flex;
 }
 
-.Video video {
+/* .Video video {
     width: 30%;
-}
+} */
 
 .Video div {
     width: 33%;
@@ -34,13 +34,13 @@
     position: fixed;
     top: 0;
     right: 0;
-}
+} */
 
 
 .Video h4,
 .Video p {
     padding-left: 10px;
-} */
+} 
 
 .Video i.fa-xmark {
     position: fixed;
@@ -53,6 +53,6 @@
     color: rgb(0, 0, 0, 0.5);
 }
 
-.Video h4 {
+/* .Video h4 {
     padding-left: 30px;
-}
+} */
