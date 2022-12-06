@@ -1,19 +1,31 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import SkillsTasks from "./SkillsTasks";
+
 import "./TaskGroup.css";
 import "../index.css";
 
 const SkillsTaskGroup = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="TaskGroup SkillsTaskGroup">
-      <Link to="/SkillsTask">
+    <div>
+      <div 
+        className="TaskGroup SkillsTaskGroup" 
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <div>
           <img src={props.imgUrl} alt={props.title} />
         </div>
         <div>
           <p>{props.title}</p>
         </div>
-      </Link>
+      </div>
+      <SkillsTasks
+        skill={props.skill}
+        title={props.title}
+        description={props.description}
+        trigger={isOpen}
+      />
     </div>
   );
 };

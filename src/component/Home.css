@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin: auto;
+    width: 100%;
 }
 
 .Home h1 {
@@ -30,6 +31,13 @@
 
     .Home h1 {
         width: 50%;
+        color: white
+    }
+
+    .Home {
+        background-image: url("/public/image/background.png");
+        background-size: cover;
+        min-height: 100vh;
     }
 }
 
@@ -38,10 +46,15 @@
         width: 50%;
     }
 
+    .Home h1 {
+        color: #0EB1AF
+    }
+
     .Home {
     background-image: url("/public/image/bg site geego.jpg");
     background-size: cover;
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: top;
+    min-height: 100vh;
 }
 }

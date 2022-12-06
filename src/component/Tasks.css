@@ -1,0 +1,64 @@
+.Tasks {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    font-family: Gibson-Bold;
+    text-align: center;
+}
+
+.Tasks h2 {
+    padding: 10px;
+}
+
+.Tasks i {
+    display: inline-block;
+    margin: 0 5px;
+}
+  
+.Tasks h2 i:nth-child(1) {
+    font-size: 15px;
+    margin-left: 30px;
+}
+  
+.Tasks h2 i:nth-child(2) {
+    font-size: 10px;
+}
+  
+.Tasks h2 i:nth-child(3) {
+    font-size: 5px;
+}
+
+.Tasks p{
+    font-family: Gibson-regular;
+}
+
+.Tasks ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.Tasks ul li {
+    display: flex;
+    padding: 5px 10px;
+}
+
+@media (min-width: 576px) {
+    .Tasks ul li {
+        width: 33%;
+        padding: 5px;
+    }
+  }
+
+@media (min-width: 992px) {
+    .Tasks ul li {
+        width: 25%;
+        padding: 5px;
+    }
+  }

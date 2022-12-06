@@ -19,7 +19,7 @@ const Skills = (props) => {
         you tick!
       </p>
       <div className="sub-categrory-group">
-        {props.skillsState.map((skillsSubCategory) => {
+        {props.skillsState && props.skillsState.map((skillsSubCategory) => {
           return skillsSubCategory.sportschools.length > 0 ? (
             <div className="sub-category">
               <SkillsSubCategory

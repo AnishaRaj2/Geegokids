@@ -14,7 +14,7 @@ const AtSchool = () => {
             bgColor2="rgb(124 54 147 / 30%)"
             description="Encourage school-age children to test the skills and find out their limits."
           />
-        </Link>
+        </Link>        
         <Link to="/Skills">
           <Button
             imgUrl="/image/ikoni_koulut.png"

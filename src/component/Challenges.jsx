@@ -18,7 +18,7 @@ const Challenges = (props) => {
         other. Geegoing is so much fun together!
       </p>
       <div className="sub-categrory-group">
-        {props.challengesState.map((challengesSubcategory) => {
+        {props.challengesState && props.challengesState.map((challengesSubcategory) => {
           return challengesSubcategory.challenges.length > 0 ? 
           (
             <div className="sub-category">

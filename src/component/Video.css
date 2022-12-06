@@ -1,0 +1,54 @@
+.Video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: white;
+    font-family: Gibson-Bold;
+    display: flex;
+}
+
+.Video video {
+    width: 33%;
+}
+
+.Video div {
+    width: 33%;
+    word-wrap: break-word;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+
+.Video i.fa-solid {
+    display: block;
+    width: 5%;
+    height: 5%;
+    font-size: 30px;
+    color: rgb(0, 0, 0, 0.5);
+}
+
+.Video i.fa-xmark {
+    position: fixed;
+    top: 0;
+    right: 0;
+}
+
+.Video i.fa-forward {
+    position: fixed;
+    top: 50%;
+    right: 0;
+}
+
+.Video i.fa-backward {
+    position: fixed;
+    top: 50%;
+    left: 0;
+}
+
+.Video h4,
+.Video p {
+    padding-left: 10px;
+}

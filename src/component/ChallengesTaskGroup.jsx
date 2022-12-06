@@ -1,20 +1,30 @@
-import React from "react";
-import { Link } from "react-router-dom";
-
+import React, { useState } from "react";
+import ChallengesTasks from "./ChallengesTasks";
 import "./TaskGroup.css";
 import "../index.css";
 
 const ChallengesTaskGroup = (props) => {
+  const [isOpen, setIsOpen] = useState(false);
+
   return (
-    <div className="TaskGroup ChallengesTaskGroup">
-      <Link to="/ChallengesTask">
+    <div>
+      <div
+        className="TaskGroup ChallengesTaskGroup"
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <div>
           <img src={props.imgUrl} alt={props.title} />
         </div>
         <div>
           <p>{props.title}</p>
         </div>
-      </Link>
+      </div>
+      <ChallengesTasks
+        challenge={props.challenge}
+        title={props.title}
+        description={props.description}
+        trigger={isOpen}
+      />
     </div>
   );
 };
