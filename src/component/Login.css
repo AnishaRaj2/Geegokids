@@ -5,8 +5,10 @@
     background-image: url("/public/image/gradienttitausta_kork2000px.png");
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: start;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     padding-top: 30px;
 }
@@ -83,7 +85,7 @@
     display: none;
 }
 
-.login-wrapper .private-policy {
+.login-wrapper .privacy-policy {
     color: black;
     font-size: 14px;
 }
@@ -91,8 +93,10 @@
 @media (min-width: 768px) {
     .login-wrapper {
         background-image: url("/public/image/bg site geego.jpg");
+        background-size: cover;
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: top;
+        min-height: 100vh;
     }
 
     .login-wrapper form {

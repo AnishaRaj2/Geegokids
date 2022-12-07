@@ -9,9 +9,9 @@
     display: flex;
 }
 
-.Video video {
-    width: 33%;
-}
+/* .Video video {
+    width: 30%;
+} */
 
 .Video div {
     width: 33%;
@@ -22,7 +22,7 @@
     text-align: left;
 }
 
-.Video i.fa-solid {
+/* .Video i.fa-solid {
     display: block;
     width: 5%;
     height: 5%;
@@ -34,21 +34,25 @@
     position: fixed;
     top: 0;
     right: 0;
-}
+} */
 
-.Video i.fa-forward {
-    position: fixed;
-    top: 50%;
-    right: 0;
-}
 
-.Video i.fa-backward {
-    position: fixed;
-    top: 50%;
-    left: 0;
-}
-
-.Video h4,
+/* .Video h4,
 .Video p {
     padding-left: 10px;
+}  */
+
+.Video i.fa-xmark {
+    position: fixed;
+    top: 15px;
+    right: 0;
+    display: block;
+    width: 5%;
+    height: 5%;
+    font-size: 20px;
+    color: rgb(0, 0, 0, 0.5) !important;
+}
+
+.Video h4 {
+    padding-left: 30px;
 }

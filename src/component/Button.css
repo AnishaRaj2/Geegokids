@@ -59,11 +59,11 @@
     .AtNurseries .Button .description
      {
         margin-top: 20px;
+        color: black
      }
 
-
-    .Button button {
-        margin-top: 40px;
+     .AtSchool .Button button {
+        margin: 50px 50px 0 50px;
     }
 }
 

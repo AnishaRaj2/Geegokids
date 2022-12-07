@@ -1,35 +1,42 @@
 import React from "react";
+import { useParams } from "react-router";
 import ToddlersTask from "./ToddlersTask";
 import "./Tasks.css";
 import "../index.css";
 
 const ToddlersTasks = (props) => {
-  return props.trigger ? (
-    <div className="Tasks">
-      <div>
-        <h2>
-          {props.title}
-          <i className="fa-solid fa-circle"></i>
-          <i className="fa-solid fa-circle"></i>
-          <i className="fa-solid fa-circle"></i>
-        </h2>
-      </div>
-      <ul>
-        {props.toddler.tasks.map((task) => {
+  const { title } = useParams();
+
+  return (
+    <div className="Tasks ToddlersTasks">
+      {props.toddlersState && props.toddlersState
+        .filter((toddler) => toddler.title === title)
+        .map((toddler, index) => {
           return (
-            <li>
-              <ToddlersTask
-                imgUrl={task.thumbnail}
-                title={task.title}
-                video={task.video}
-              />
-            </li>
+            <div>
+              <h2 key={index}>
+                {toddler.title}
+                <i className="fa-solid fa-circle"></i>
+                <i className="fa-solid fa-circle"></i>
+                <i className="fa-solid fa-circle"></i>
+              </h2>
+              <ul>
+                {toddler.tasks.map((task) => {
+                  return (
+                    <li>
+                      <ToddlersTask
+                        imgUrl={task.thumbnail}
+                        title={task.title}
+                        video={task.video}
+                      />
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
           );
         })}
-      </ul>
     </div>
-  ) : (
-    ""
   );
 };
 

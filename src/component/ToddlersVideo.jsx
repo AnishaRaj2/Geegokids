@@ -14,11 +14,10 @@ const ToddlersVideo = (props) => {
         />
       </video>
       <div>
-        <i 
+      <i 
             className="fa-solid fa-xmark" 
-            onClick={() => props.setTrigger(false)}
-        >
-        </i>
+            onClick={() => props.setTrigger(false)}>
+          </i>
         <h4>{props.title}</h4>
         <p>{props.description}</p>
       </div>

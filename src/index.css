@@ -21,7 +21,7 @@
 .main-category h2 {
   color: #032741;
   font-size: 50px;
-  padding: 30px;
+  padding: 10px 30px;
 }
 
 .main-category > p{
@@ -55,6 +55,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
+  padding: 0 30px;
 }
 
 .main-category > .sub-categrory-group > .sub-category {
@@ -63,9 +64,13 @@
 }
 
 @media (min-width: 576px) {
+  .main-category > .sub-categrory-group {
+    justify-content: flex-start;
+  }
   .main-category > .sub-categrory-group > .sub-category {
       width: 50%;
       padding: 20px 5px;
+      
   }
 }
 
@@ -73,5 +78,15 @@
   .main-category > .sub-categrory-group > .sub-category {
       width: 33%;
       padding: 20px 5px;
+      
+      
+  }
+}
+
+@media (min-width: 1200px) {
+  .main-category > .sub-categrory-group > .sub-category {
+      width: 25%;
+      padding: 20px 5px;
+      
   }
 }

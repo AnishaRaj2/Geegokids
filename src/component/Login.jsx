@@ -89,12 +89,12 @@ const Login = (props) => {
           <button type="submit" className="btn btn-primary form-control">
             Login
           </button>
-          <a className="private-policy"
+          <a className="privacy-policy"
             href="https://www.geegokids.com/fi/kayttoehdot-ja-yksityisyydensuoja/verkkosivujen-tietosuojaseloste/"
             target="_blank"
             rel="noreferrer"
           >
-            Geego Kids Private Policy
+            Geego Kids Privacy Policy
           </a>
         </div>
       </form>

@@ -1,6 +1,5 @@
 import React from "react";
 import ToddlersSubCategory from "./ToddlersSubCategory";
-
 import "./Toddlers.css";
 import "../index.css";
 
