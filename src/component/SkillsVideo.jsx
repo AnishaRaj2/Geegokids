@@ -10,10 +10,10 @@ const SkillsVideo = (props) => {
         <source src={props.video} type="video/mp4" />
       </video>
       <div>
-        <i 
-          className="fa-solid fa-xmark" 
-          onClick={() => props.setTrigger(false)}
-        ></i>
+      <i 
+            className="fa-solid fa-xmark" 
+            onClick={() => props.setTrigger(false)}>
+          </i>
         <h4>{props.title}</h4>
         <p>{props.description}</p>
       </div>

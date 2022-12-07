@@ -22,6 +22,18 @@
     display: inline-block;
     margin: 0 5px;
 }
+
+.Tasks.ChallengesTasks i {
+    color: #6b3776;
+}
+
+.Tasks.SkillsTasks i {
+    color: #0074ac;
+}
+
+.Tasks.ToddlersTasks i {
+    color: #eb6a39;
+}
   
 .Tasks h2 i:nth-child(1) {
     font-size: 15px;

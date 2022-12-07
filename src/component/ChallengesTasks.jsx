@@ -8,7 +8,7 @@ const ChallengesTasks = (props) => {
   const { title } = useParams();
 
   return (
-    <div className="Tasks">
+    <div className="Tasks ChallengesTasks">
       {props.challengesState && props.challengesState.map((challengesSubcategory) => {
         return challengesSubcategory.challenges
           .filter((challenge) => challenge.title === title)
