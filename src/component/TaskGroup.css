@@ -33,6 +33,10 @@
     padding-left: 20px;
 }
 
+.TaskGroup div:nth-child(2) p {
+    padding-left: 20px;
+}
+
 div a {
     text-decoration: none;
     color: black;

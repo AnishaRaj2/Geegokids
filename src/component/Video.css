@@ -37,14 +37,14 @@
 } */
 
 
-.Video h4,
+/* .Video h4,
 .Video p {
     padding-left: 10px;
-} 
+}  */
 
 .Video i.fa-xmark {
     position: fixed;
-    top: 0;
+    top: 15px;
     right: 0;
     display: block;
     width: 5%;
@@ -53,6 +53,6 @@
     color: rgb(0, 0, 0, 0.5);
 }
 
-/* .Video h4 {
-    padding-left: 30px;
-} */
+.Video h4 {
+    padding-left: 20px;
+}

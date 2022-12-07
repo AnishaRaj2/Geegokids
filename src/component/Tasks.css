@@ -9,12 +9,13 @@
     display: flex;
     flex-direction: column;
     font-family: Gibson-Bold;
-    text-align: center;
+    /* text-align: center; */
     padding: 20px 10px
 }
 
 .Tasks h2 {
-    padding: 30px 10px 20px;
+    font-size: 40px;
+    padding: 10px 30px;
 }
 
 .Tasks i {
@@ -37,7 +38,7 @@
 
 .Tasks p{
     font-family: Gibson-regular;
-    padding: 20px;
+    padding: 0 30px;
 }
 
 .Tasks ul {

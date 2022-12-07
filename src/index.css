@@ -21,7 +21,7 @@
 .main-category h2 {
   color: #032741;
   font-size: 50px;
-  padding: 30px;
+  padding: 10px 30px;
 }
 
 .main-category > p{
@@ -55,7 +55,7 @@
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 30px;
+  padding: 0 30px;
 }
 
 .main-category > .sub-categrory-group > .sub-category {
